@@ -12,9 +12,36 @@ namespace GGJ19
         public float zoomInSize = 4.5f;
         public float zoomOutSize = 10f;
 
+        public Transform player;
+
         public void StartFollowing(Transform target)
         {
+            StartCoroutine(StartFollowingCO(target));
+        }
+
+        public IEnumerator StartFollowingCO(Transform target)
+        {
+
+            float t = 0f;
+            Vector3 startingPos = vCamera.transform.position;
+
+            vCamera.m_Follow = null;   
+
+            while ((vCamera.transform.position - target.position).sqrMagnitude > 0.001f)
+            {
+                vCamera.transform.position = Vector3.Lerp(startingPos, target.position, t);
+                t += Time.deltaTime;
+                yield return null;
+            }
+
             vCamera.m_Follow = target;
+
+        }
+
+        public void Reset()
+        {
+            StartFollowing(player);
+            ZoomOut();
         }
 
         public void ZoomIn()
@@ -24,12 +51,12 @@ namespace GGJ19
 
         public IEnumerator ZoomInCO()
         {
-            float zoom = vCamera.m_Lens.OrthographicSize;
+            float t = 0f;
 
             while (vCamera.m_Lens.OrthographicSize > zoomInSize)
             {
-                vCamera.m_Lens.OrthographicSize = Mathf.Lerp(zoomOutSize, zoomInSize, zoom);
-                zoom += 0.5f * Time.deltaTime;
+                vCamera.m_Lens.OrthographicSize = Mathf.Lerp(zoomOutSize, zoomInSize, t);
+                t += Time.deltaTime;
                 yield return null;
             }
 
@@ -43,12 +70,12 @@ namespace GGJ19
 
         public IEnumerator ZoomOutCO()
         {
-            float zoom = vCamera.m_Lens.OrthographicSize;
+            float t = 0f;
 
-            while (vCamera.m_Lens.OrthographicSize > zoomInSize)
+            while (vCamera.m_Lens.OrthographicSize < zoomOutSize)
             {
-                vCamera.m_Lens.OrthographicSize = Mathf.Lerp(zoomInSize, zoomOutSize, zoom);
-                zoom += 0.5f * Time.deltaTime;
+                vCamera.m_Lens.OrthographicSize = Mathf.Lerp(zoomInSize, zoomOutSize, t);
+                t += Time.deltaTime;
                 yield return null;
             }
 

@@ -26,6 +26,9 @@ namespace GGJ19 {
             GameManager.I.INTERACTING = true;
             ShowInteraction(false);
 
+            CameraManager.I.StartFollowing(transform);
+            CameraManager.I.ZoomIn();
+
             DialogueManager.I.Show(dialogues);
         }
     }

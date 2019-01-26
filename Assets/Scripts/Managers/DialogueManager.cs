@@ -66,6 +66,7 @@ namespace GGJ19 {
             Hide();
 
             GameManager.I.INTERACTING = false;
+            CameraManager.I.Reset();
 
         }
 
