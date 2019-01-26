@@ -6,7 +6,7 @@ namespace GGJ19
 {
     public class GameManager : MonoSingleton<GameManager>
     {
-        public bool interacting = false;
+        bool interacting = false;
         public bool INTERACTING {
             get { return interacting; }
             set { interacting = value; }

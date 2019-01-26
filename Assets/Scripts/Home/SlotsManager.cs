@@ -6,19 +6,19 @@ namespace GGJ19
 {
     public class SlotsManager : MonoBehaviour
     {
-        public SpriteRenderer couch;
-        public SpriteRenderer table;
-        public SpriteRenderer furniture_in;
-        public SpriteRenderer furniture_out;
-        public SpriteRenderer hobby_table;
+        public Slot couch;
+        public Slot table;
+        public Slot furniture_in;
+        public Slot furniture_out;
+        public Slot hobby_table;
 
         private void Start()
         {
-            couch.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
-            table.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
-            furniture_in.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
-            furniture_out.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
-            hobby_table.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+            couch.SetHighlight(false);
+            table.SetHighlight(false);
+            furniture_in.SetHighlight(false);
+            furniture_out.SetHighlight(false);
+            hobby_table.SetHighlight(false);
         }
 
         public void SetObject(Position position, CharacterItem item)
@@ -32,19 +32,19 @@ namespace GGJ19
             switch (position)
             {
                 case Position.COUCH:
-                    couch.sprite = item.sprite;
+                    couch.SetSprite(item.sprite);
                     break;
                 case Position.TABLE:
-                    table.sprite = item.sprite;
+                    table.SetSprite(item.sprite);
                     break;
                 case Position.FURNITURE_INDOOR:
-                    furniture_in.sprite = item.sprite;
+                    furniture_in.SetSprite(item.sprite);
                     break;
                 case Position.HOBBY_TABLE:
-                    hobby_table.sprite = item.sprite;
+                    hobby_table.SetSprite(item.sprite);
                     break;
                 case Position.FURNITURE_OUTDOOR:
-                    furniture_out.sprite = item.sprite;
+                    furniture_out.SetSprite(item.sprite);
                     break;
                 default:
                     break;
@@ -53,31 +53,28 @@ namespace GGJ19
 
         public void Highlight(Position position, bool status)
         {
-            GameObject parent = null;
 
             switch (position)
             {          
                 case Position.COUCH:
-                    parent = couch.gameObject;
+                    couch.SetHighlight(status);
                     break;
                 case Position.TABLE:
-                    parent = table.gameObject;
+                    table.SetHighlight(status);
                     break;
                 case Position.FURNITURE_INDOOR:
-                    parent = furniture_in.gameObject;
+                    furniture_in.SetHighlight(status);
                     break;
                 case Position.HOBBY_TABLE:
-                    parent = hobby_table.gameObject;
+                    hobby_table.SetHighlight(status);
                     break;
                 case Position.FURNITURE_OUTDOOR:
-                    parent = furniture_out.gameObject;
+                    furniture_out.SetHighlight(status);
                     break;
                 default:
                     break;
             }
 
-            var tr = couch.transform.Find("Highlight");
-            tr.gameObject.SetActive(status);
         }
     }
 }
