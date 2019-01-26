@@ -12,6 +12,15 @@ namespace GGJ19
         public SpriteRenderer furniture_out;
         public SpriteRenderer hobby_table;
 
+        private void Start()
+        {
+            couch.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+            table.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+            furniture_in.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+            furniture_out.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+            hobby_table.gameObject.transform.Find("Highlight").gameObject.SetActive(false);
+        }
+
         public void SetObject(Position position, CharacterItem item)
         {
 
