@@ -15,6 +15,15 @@ namespace GGJ19 {
 
         public SpriteRenderer interactImage;
 
+        public Sprite[] pocketItems;
+
+        CharacterPockets pockets;
+
+        private void Start()
+        {
+            pockets = GetComponentInChildren<CharacterPockets>();
+        }
+
         public void ShowInteraction(bool status)
         {
             float targetAlpha = status ? 1f : 0f;
@@ -25,6 +34,11 @@ namespace GGJ19 {
         {
             GameManager.I.INTERACTING = true;
             ShowInteraction(false);
+
+            CameraManager.I.StartFollowing(transform);
+            CameraManager.I.ZoomIn();
+
+            pockets.Show(pocketItems);
 
             DialogueManager.I.Show(dialogues);
         }

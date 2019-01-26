@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 70526d7a655e520458e79dee21897d44
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO"
+    100002: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Ellisse>\_+\_<Ellisse>"
+    100004: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>"
+    100006: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_1"
+    100008: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_2"
+    100010: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_3"
+    100012: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_4"
+    100014: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>"
+    100016: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1"
+    400000: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/Transform"
+    400002: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Ellisse>\_+\_<Ellisse>/Transform"
+    400004: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>/Transform"
+    400006: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_1/Transform"
+    400008: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_2/Transform"
+    400010: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_3/Transform"
+    400012: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_4/Transform"
+    400014: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>/Transform"
+    400016: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1/Transform"
+    2800000: Agente Immobiliare
+    21200000: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Ellisse>\_+\_<Ellisse>/SpriteRenderer"
+    21200002: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>/SpriteRenderer"
+    21200004: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_1/SpriteRenderer"
+    21200006: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_2/SpriteRenderer"
+    21200008: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_3/SpriteRenderer"
+    21200010: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Gruppo>_4/SpriteRenderer"
+    21200012: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>/SpriteRenderer"
+    21200014: "<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1_GO/<Tracciato>\_+\_<Tracciato>_1/SpriteRenderer"
+    21300000: <Gruppo>
+    21300002: "<Tracciato>\_+\_<Tracciato>"
+    21300004: <Gruppo>_1
+    21300006: "<Ellisse>\_+\_<Ellisse>"
+    21300008: <Gruppo>_2
+    21300010: <Gruppo>_3
+    21300012: <Gruppo>_4
+    21300014: "<Tracciato>\_+\_<Tracciato>_1"
+    100100000: "<Tracciato>\_+\_<Tracciato>_1_GO"
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: <Gruppo>
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 1113
+      width: 87
+      height: 326
+    spriteID: 4cbbf47a46ede5e4daf0fb33ee69295a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -57, y: 596}
+  - name: "<Tracciato>\_+\_<Tracciato>"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1537
+      width: 333
+      height: 225
+    spriteID: df7c3eef118042149a480ff0d09dc34b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -275, y: 541}
+  - name: <Gruppo>_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 1537
+      width: 58
+      height: 104
+    spriteID: 37f907ce975b77b4aac57fcf2b77928d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -45, y: 634}
+  - name: "<Ellisse>\_+\_<Ellisse>"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 1447
+      width: 134
+      height: 24
+    spriteID: c336f26a5df284f42ad389b76f479297
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -77, y: 400}
+  - name: <Gruppo>_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1770
+      width: 251
+      height: 255
+    spriteID: 14c933c2d59c44a41b0b30308fbdbd99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -527, y: 1145}
+  - name: <Gruppo>_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1113
+      width: 264
+      height: 416
+    spriteID: 794dbe60950e3744392c55304f58b64e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 427}
+  - name: <Gruppo>_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 459
+      height: 1101
+    spriteID: c59d447cf20805848a9b5a966f41cfe5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -172, y: -69}
+  - name: "<Tracciato>\_+\_<Tracciato>_1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 471
+      y: 4
+      width: 458
+      height: 1098
+    spriteID: 8b23380decdd7fb44aa4c8d2216087a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 294, y: -71}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 782, y: 1249}
+  textureActualWidth: 1024
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Livello 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 12
+    mosaicPosition: {x: 0, y: 0}
+  - name: <Gruppo>
+    spriteName: <Gruppo>
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4cbbf47a46ede5e4daf0fb33ee69295a
+    layerID: 11
+    mosaicPosition: {x: 276, y: 1113}
+  - name: "<Tracciato>\_+\_<Tracciato>"
+    spriteName: "<Tracciato>\_+\_<Tracciato>"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: df7c3eef118042149a480ff0d09dc34b
+    layerID: 10
+    mosaicPosition: {x: 4, y: 1537}
+  - name: <Gruppo>
+    spriteName: <Gruppo>_1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 37f907ce975b77b4aac57fcf2b77928d
+    layerID: 9
+    mosaicPosition: {x: 345, y: 1537}
+  - name: "<Ellisse>\_+\_<Ellisse>"
+    spriteName: "<Ellisse>\_+\_<Ellisse>"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c336f26a5df284f42ad389b76f479297
+    layerID: 8
+    mosaicPosition: {x: 276, y: 1447}
+  - name: <Gruppo>
+    spriteName: <Gruppo>_2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 14c933c2d59c44a41b0b30308fbdbd99
+    layerID: 7
+    mosaicPosition: {x: 4, y: 1770}
+  - name: <Gruppo>
+    spriteName: <Gruppo>_3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 794dbe60950e3744392c55304f58b64e
+    layerID: 6
+    mosaicPosition: {x: 4, y: 1113}
+  - name: <Gruppo>
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 00000000000000000000000000000000
+    layerID: 4
+    mosaicPosition: {x: 0, y: 0}
+  - name: <Gruppo>
+    spriteName: <Gruppo>_4
+    isGroup: 0
+    parentIndex: 7
+    spriteID: c59d447cf20805848a9b5a966f41cfe5
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+  - name: "<Tracciato>\_+\_<Tracciato>"
+    spriteName: "<Tracciato>\_+\_<Tracciato>_1"
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 8b23380decdd7fb44aa4c8d2216087a9
+    layerID: 2
+    mosaicPosition: {x: 471, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
