@@ -11,6 +11,9 @@ namespace GGJ19
         private Vector2 movement = Vector2.zero;
         private Rigidbody2D rb;
 
+        bool isFlipped = false;
+
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -25,8 +28,26 @@ namespace GGJ19
 
         private void FixedUpdate()
         {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);      
+            if (!GameManager.I.INTERACTING)
+            {
+                rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
+            }
 
+            if (movement.x != 0f && !isFlipped && Mathf.Sign(movement.x) == -1f) {
+                Flip();
+            } else if (movement.x != 0f && isFlipped && Mathf.Sign(movement.x) == 1f) {
+                Flip();
+            }
         }
+
+        void Flip()
+        {
+            float xScale = transform.localScale.x;
+            transform.localScale = new Vector3(-xScale, transform.localScale.y, transform.localScale.z);
+            isFlipped = !isFlipped;
+        }
+
+        
+
     }
 }
