@@ -41,5 +41,34 @@ namespace GGJ19
                     break;
             }
         }
+
+        public void Highlight(Position position, bool status)
+        {
+            GameObject parent = null;
+
+            switch (position)
+            {          
+                case Position.COUCH:
+                    parent = couch.gameObject;
+                    break;
+                case Position.TABLE:
+                    parent = table.gameObject;
+                    break;
+                case Position.FURNITURE_INDOOR:
+                    parent = furniture_in.gameObject;
+                    break;
+                case Position.HOBBY_TABLE:
+                    parent = hobby_table.gameObject;
+                    break;
+                case Position.FURNITURE_OUTDOOR:
+                    parent = furniture_out.gameObject;
+                    break;
+                default:
+                    break;
+            }
+
+            var tr = couch.transform.Find("Highlight");
+            tr.gameObject.SetActive(status);
+        }
     }
 }
