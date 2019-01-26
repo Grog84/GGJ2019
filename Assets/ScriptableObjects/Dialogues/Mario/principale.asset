@@ -13,9 +13,19 @@ MonoBehaviour:
   m_Name: principale
   m_EditorClassIdentifier: 
   dialogues:
-  - text: 
+  - text: "Hello! It's-a me, Mario! \n"
+    emotion: 1
+  - text: 'Owww... It was-a Me maybe? Mamma mia! '
+    emotion: 0
+  - text: "But what a nice place is here! Very nice pipes too! \n"
     emotion: 3
-  - text: 
-    emotion: 0
-  - text: 
-    emotion: 0
+  - text: "Stop,stop! I don't care anymore about pipes! Such a pity I'm dead, I was
+      going to start a new life! \n"
+    emotion: 3
+  - text: "Maybe I will start it here! Woo-hoos! \nAnd maybe my brother will join
+      me here if he dies! We can have a pizza together! \n"
+    emotion: 3
+  - text: 'See you soon my friend! Okie dokie!
+
+'
+    emotion: 3

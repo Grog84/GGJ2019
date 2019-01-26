@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98aef5e042aecb446a5e37983b881cd5, type: 3}
+  m_Name: principale
+  m_EditorClassIdentifier: 
+  dialogues:
+  - text: 'Come here my dear! '
+    emotion: 3
+  - text: You are such a sweet little catch! You will be sourrounded by ladies and
+      gentlemens starving for your attention!
+    emotion: 3
+  - text: I was young as you once.. But I don't complain, I'm still a catch!
+    emotion: 1
+  - text: But I need to move, you know? My old house is sourronded by yelling women
+      eating only raw cabbage and tofu. And they are quite agressive too!
+    emotion: 0
+  - text: Speking of new meetings.. do you know that sweet beautiful girl over there?
+    emotion: 1
+  - text: 'Go to ask her if she is single! '
+    emotion: 1
+  - text: 
+    emotion: 0
