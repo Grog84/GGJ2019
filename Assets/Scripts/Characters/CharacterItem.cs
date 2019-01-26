@@ -14,7 +14,7 @@ namespace GGJ19
         public Sprite sprite;
         public bool isSpecial;
         public Style style;
-        public Position position;
+        public Position[] position;
 
     }
 }

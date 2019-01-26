@@ -24,11 +24,6 @@ namespace GGJ19
         public void SetObject(Position position, CharacterItem item)
         {
 
-            if (position != item.position)
-            {
-                Debug.LogError("ERROR: position and item position not matching");
-            }
-
             switch (position)
             {
                 case Position.COUCH:

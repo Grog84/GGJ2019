@@ -33,6 +33,7 @@ namespace GGJ19 {
             if (collision.collider.gameObject.tag == "Player")
             {
                 SetHighlight(true);
+                UIItemList.I.ShowItemsOfPosition(position);
             }
         }
 
@@ -42,6 +43,7 @@ namespace GGJ19 {
             if (collision.collider.gameObject.tag == "Player")
             {
                 SetHighlight(false);
+                UIItemList.I.HideItems();
             }
         }
     }
