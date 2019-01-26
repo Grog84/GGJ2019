@@ -6,7 +6,7 @@ using System;
 
 namespace GGJ19 {
 
-    public enum Emotion { SAD, HAPPY, ANGRY, NORMAL }
+    public enum Emotion { SAD, HAPPY, DEAD, NORMAL }
 
     [Serializable]
     public struct Dialogue
