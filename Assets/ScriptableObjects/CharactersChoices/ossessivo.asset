@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da053869ac1611468d80cc75ab9ac2c, type: 3}
+  m_Name: ossessivo
+  m_EditorClassIdentifier: 
+  characterName: ossessivo
+  lovedItems:
+  - {fileID: 11400000, guid: 661610d30ea15da49834899fb5f1e988, type: 2}
+  - {fileID: 11400000, guid: d30bef4f8f6bf714381cb51982a8d2e5, type: 2}
+  deathItems:
+  - {fileID: 11400000, guid: 268bf8f8b61b391488449fbdc7dfa59f, type: 2}
+  style: 3

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da053869ac1611468d80cc75ab9ac2c, type: 3}
+  m_Name: Anziano
+  m_EditorClassIdentifier: 
+  characterName: Anziano
+  lovedItems:
+  - {fileID: 11400000, guid: 8ad73feb47090ed4f8657f4d1a0a878b, type: 2}
+  - {fileID: 11400000, guid: 259e7957a97338e47a90378fe05b981e, type: 2}
+  deathItems:
+  - {fileID: 11400000, guid: ab88636bb578cf841af986e20dc8ca53, type: 2}
+  style: 2
