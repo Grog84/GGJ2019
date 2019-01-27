@@ -8,7 +8,7 @@ namespace GGJ19
     public class DeathEntry: ScriptableObject
     {
         public string character;
-        public string item;
+        public CharacterItem item;
         [TextArea]
         public string text;
     }
@@ -17,7 +17,7 @@ namespace GGJ19
     {
         public DeathEntry[] entries;
 
-        public string deathItem = "";
+        public CharacterItem deathItem;
 
 
     }

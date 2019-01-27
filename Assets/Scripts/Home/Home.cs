@@ -86,8 +86,9 @@ namespace GGJ19 {
                     {
                         score += 25;
                     }
-                    else if (choices.lovedItems.Contains(composition[pos]))
+                    else if (choices.deathItems.Contains(composition[pos]))
                     {
+                        DeathManager.I.deathItem = composition[pos];
                         score -= 500;
                     }
                 }

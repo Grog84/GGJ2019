@@ -33,7 +33,10 @@ namespace GGJ19
         {
             finalScore += HomeManager.I.GetScore();
 
+            if (finalScore < 0)
+            {
 
+            }
 
             HomeManager.I.AddComposition();
 
