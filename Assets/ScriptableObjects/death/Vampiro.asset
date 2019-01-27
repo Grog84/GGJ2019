@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Vampiro
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
+  m_Name: vampiro
+  m_EditorClassIdentifier: 
   character: vampiro
   item: {fileID: 11400000, guid: 661610d30ea15da49834899fb5f1e988, type: 2}
-  text: Oh, don't worry too much, this charming friend dies a couple of times a week!
-    He often falls on objects, poor dear, and he seems o have a feeling for sharp
-    wooden furniture. He wil be back again in an heartbeat!
+  text: Oh, don't worry to much for that nice charming guy, he will be back in some
+    days! Seems he always manage to fall on some woden piece of furniture!

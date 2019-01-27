@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
   m_Name: rocker
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
-  character: roker
+  m_EditorClassIdentifier: 
+  character: rocker
   item: {fileID: 11400000, guid: 0b7c0318b71b7084aa26ca8ccecf2741, type: 2}
-  text: 'Poor lad, why would you put a waterbed in his place! He died electrified
-    when his guitar fell into the sink! '
+  text: Oh dear! Why didi you put a waterbed in his place! Didn't you know the poor
+    lad died electrified when his microphone falled in the sink?

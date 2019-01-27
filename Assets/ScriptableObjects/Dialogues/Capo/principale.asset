@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: principale
   m_EditorClassIdentifier: 
   dialogues:
-  - text: Hi dear! Finally today is yur first day out there! Good luck boy!
+  - text: Hi dear! Finally! Today is your first day out there! Good luck boy!
     emotion: 3
-  - text: Be very carefull with your clients! Chost can be very picky on the things
+  - text: Be very carefull with your clients! Ghost can be very picky on the things
       they like or dislike!
     emotion: 3
-  - text: Unfortunately often they don't really remember what tey like... You will
+  - text: Unfortunately often they don't really remember what they like... You will
       notice how memories of former times tend to vanish easily.
     emotion: 3
   - text: 'But don''t worry! You will become an expert in undestanding your clients
@@ -27,17 +27,17 @@ MonoBehaviour:
   - text: 'But don''t worry! You will become an expert in undestanding your clients
       tastes at first sight! Sometimes few clues are enough! '
     emotion: 3
-  - text: Everyone likes to really feel at home... And we have some very special "golden"
-      items you can use to decorate the houses for your clients!
+  - text: Everyone likes to really feel at home... And this is your job! We have some
+      very special "golden" items you can use to decorate the houses for your clients!
     emotion: 3
   - text: But remember, we have only one of each of them, so try to understand who
-      could really love them!
+      could really really love them!
     emotion: 3
   - text: Just one last thing! Remember, ghosts can be very upsetted by memories of
       their... you know... departures
     emotion: 0
-  - text: I still can't look at a river without feeling a chill down my spine!
+  - text: I still can't think of... brrr, never mind!
     emotion: 0
   - text: But don't worry, you will be fine! Just don't ask about how they died and
-      don'tshow them anything that can make them remember!
+      don't show them anything that can make them remember! Only positive thoughts!
     emotion: 3

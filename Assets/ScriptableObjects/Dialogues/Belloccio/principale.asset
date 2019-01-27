@@ -16,14 +16,17 @@ MonoBehaviour:
   - text: 'Come here my dear! '
     emotion: 3
   - text: You are such a sweet little catch! You will be sourrounded by ladies and
-      gentlemens starving for your attention!
+      gentlemens craving for your attention!
     emotion: 3
-  - text: I was young as you once.. But I don't complain, I'm still a catch!
+  - text: I was young as you once.. But I don't want to complain, I'm still a good
+      catch!
     emotion: 1
-  - text: But I need to move, you know? My old house is sourronded by yelling women
-      eating only raw cabbage and tofu. And they are quite agressive too!
+  - text: But I need to move from my house, you know? My old house is sourronded by
+      yelling women eating only raw cabbage and tofu. And they are quite agressive
+      too!
     emotion: 0
-  - text: Speking of new meetings.. do you know that sweet beautiful girl over there?
+  - text: Speking of new meetings.. do you know who is that sweet beautiful girl over
+      there?
     emotion: 1
-  - text: 'Go to ask her if she is single! '
+  - text: Go to ask her if she is single! And if she eats meat!
     emotion: 1

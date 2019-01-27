@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: principale
   m_EditorClassIdentifier: 
   dialogues:
-  - text: Ohhhh I am so excited, this place is amazing!
+  - text: Ohhhh, I am so excited, this place is amazing!
     emotion: 1
   - text: I always knew there was an afterlife! I knew it!
     emotion: 1

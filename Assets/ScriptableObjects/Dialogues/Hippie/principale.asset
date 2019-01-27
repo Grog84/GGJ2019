@@ -20,14 +20,16 @@ MonoBehaviour:
 
 '
     emotion: 1
-  - text: Our bodies are a temple.. you should take better care of yourself... be
+  - text: Our bodies are as temples.. you should take better care of yourself... be
       carefull of what you eat and what you wear!
     emotion: 3
   - text: I wear and eat only with respect and care for the earth and everything and
-      everyonearound me...
+      everyone around me...
     emotion: 0
-  - text: But you know, I want to be treated with the same respect. Please fin me
-      a lace where I can live peacefully.
+  - text: But you know, I deserve the same respect! Please find me a place where I
+      can live peacefully! No barbeques, no motorbikes... anything that can upset
+      me!
     emotion: 0
-  - text: 'I alreaedy had to many problems with my disrespectefull neighbours. '
+  - text: 'I alreaedy had to many problems with my former disrespectefull neighbours
+      that I had to take care of! '
     emotion: 0

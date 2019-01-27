@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
   m_Name: ossessivo
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  m_EditorClassIdentifier: 
   character: ossessivo
   item: {fileID: 11400000, guid: 268bf8f8b61b391488449fbdc7dfa59f, type: 2}
-  text: 'This was really stupid of you! A garbage bin in this guy house, you should
-    have anderstood he can''t sand mess and dirt! And by the way, he died for a gun
-    shot when he complained about the smell with a bio-vegan nazi who was collecting
-    garbage for compost! '
+  text: What the hell! How could you think to put a garbage bin in this guy place!
+    Don't you know that a crazy bio-vegan nazi lady killed him when he complained
+    for her smelly compost garbage?

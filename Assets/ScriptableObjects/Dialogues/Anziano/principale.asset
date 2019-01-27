@@ -17,18 +17,18 @@ MonoBehaviour:
 
       Why you let me wait so long!'
     emotion: 3
-  - text: You died very young my dear! These new generations... see that young man
-      over there?
+  - text: You died very young my dear! You belong of one of these letter generations..
+      X, Z? I don't like them! You see that young man over there?
     emotion: 3
   - text: What he thinks he is doing with that chicken crest on his head? And all
       that jewelry?
     emotion: 3
-  - text: I don't want to live next to him! If that youngster makes to much noise
+  - text: I don't want to live next to him! If that youngster makes too much noise
       I will go and tell him off!
     emotion: 3
   - text: I have been through two wars! I am not scared, you know?
     emotion: 3
-  - text: Ohhh.... Mmmm..
+  - text: Ohhh.... Mmmm.. Yes, not scared!
     emotion: 0
-  - text: Well.. Send him away!
+  - text: Well.. In any case send him away!
     emotion: 0

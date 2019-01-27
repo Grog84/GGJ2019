@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da053869ac1611468d80cc75ab9ac2c, type: 3}
   m_Name: rocker
   m_EditorClassIdentifier: 
-  characterName: 
-  lovedItems: []
-  deathItems: []
+  characterName: rocker
+  lovedItems:
+  - {fileID: 11400000, guid: 71c8d7f2797269141826991dd1a9bb02, type: 2}
+  - {fileID: 11400000, guid: f11d204ed2e8c4a48a4a06a22260823b, type: 2}
+  deathItems:
+  - {fileID: 11400000, guid: 0b7c0318b71b7084aa26ca8ccecf2741, type: 2}
   style: 0
