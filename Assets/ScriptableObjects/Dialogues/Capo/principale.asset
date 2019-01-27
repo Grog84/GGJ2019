@@ -21,14 +21,23 @@ MonoBehaviour:
   - text: Unfortunately often they don't really remember what tey like... You will
       notice how memories of former times tend to vanish easily.
     emotion: 3
-  - text: But don't worry! You will become an expert in undestanding your clients
-      tastes at first sight! Sometimes few clues are enought!
+  - text: 'But don''t worry! You will become an expert in undestanding your clients
+      tastes at first sight! Sometimes few clues are enought! '
     emotion: 3
-  - text: Just one last thing! Remember, ghost can be very upsetted by memories of
+  - text: 'But don''t worry! You will become an expert in undestanding your clients
+      tastes at first sight! Sometimes few clues are enough! '
+    emotion: 3
+  - text: Everyone likes to really feel at home... And we have some very special "golden"
+      items you can use to decorate the houses for your clients!
+    emotion: 3
+  - text: But remember, we have only one of each of them, so try to understand who
+      could really love them!
+    emotion: 3
+  - text: Just one last thing! Remember, ghosts can be very upsetted by memories of
       their... you know... departures
     emotion: 0
-  - text: 'I still can''t look at a river withut feeling a chill down my spine! '
-    emotion: 3
-  - text: But don't worry, you will be fine! Just don't ask about how they died and
-      don't make anything that can make them remember!
+  - text: I still can't look at a river without feeling a chill down my spine!
     emotion: 0
+  - text: But don't worry, you will be fine! Just don't ask about how they died and
+      don'tshow them anything that can make them remember!
+    emotion: 3
