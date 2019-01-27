@@ -1,21 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GGJ19
 {
+    public enum Winresults { GREAT, GOOD, MEH, BAD }
+
     public class WinManager : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        public Image panelGreat;
+        public Image panelGood;
+        public Image panelMeh;
+        public Image panelBad;
+
+        public void Hide()
         {
-        
+            panelGreat.color = Color.clear;
+            panelGood.color = Color.clear;
+            panelMeh.color = Color.clear;
+            panelBad.color = Color.clear;
         }
 
-        // Update is called once per frame
-        void Update()
+
+        public void ShowDeath(int score)
         {
-        
+            Winresults res;
+
         }
+
     }
 }
