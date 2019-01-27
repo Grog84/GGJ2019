@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
-  m_Name: vampiro
+  m_Name: Vampiro
   m_EditorClassIdentifier: 
   character: vampiro
   item: {fileID: 11400000, guid: 661610d30ea15da49834899fb5f1e988, type: 2}
