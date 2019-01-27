@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98aef5e042aecb446a5e37983b881cd5, type: 3}
+  m_Name: principale
+  m_EditorClassIdentifier: 
+  dialogues:
+  - text: Hello Mister, finally you are here! I can't wait to see wht you will show
+      me.
+    emotion: 3
+  - text: I was asking myself if it is possible to cut the grass in the garden, I
+      don't like the mess, neither the smell and the colour.
+    emotion: 3
+  - text: Actually it would be nice if the entire block was a bit more clean, but
+      you have to make compromise, you know?
+    emotion: 3
+  - text: Once I used to be very rigid on this kind of stuff.. lukely now I rely on
+      the experience and wisdom of my ancestor to help me.
+    emotion: 3
+  - text: Thanks to these oriental tecniques I am practicing I thnk I can say I am
+      almost at peace with myself.
+    emotion: 3
+  - text: It is definetely time to move to a new house!
+    emotion: 3
