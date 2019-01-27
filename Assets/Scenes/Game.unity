@@ -32722,7 +32722,7 @@ PrefabInstance:
         type: 3}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1232187340}
+      objectReference: {fileID: 681035022}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 017b74ea392b0b94f8f1b3be53a12df4, type: 3}
 --- !u!4 &1531751964 stripped
