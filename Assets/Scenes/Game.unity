@@ -30316,7 +30316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: ragazza
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: b2208a650bd26914d856564a86652ade, type: 2}
   dialogues: {fileID: 11400000, guid: 92ac1be27ad17ed4097e3586deb94ad2, type: 2}
   interactImage: {fileID: 1779544195}
   pocketItems: []
@@ -30889,7 +30889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: hippy
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: 5989943668b9d5b48bf51c38edf50f9e, type: 2}
   dialogues: {fileID: 11400000, guid: 52fb01c39a9d3144189646bc5808e604, type: 2}
   interactImage: {fileID: 1906761886}
   pocketItems: []
@@ -31353,7 +31353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: mario
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: e2725548808dee249bd3045e4bd7d7d7, type: 2}
   dialogues: {fileID: 11400000, guid: 6a0f88d47745103438b70bab17b104fb, type: 2}
   interactImage: {fileID: 1145292455}
   pocketItems: []
@@ -31735,7 +31735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: rocker
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: a9b79e063cb51424b99cc84f5516d402, type: 2}
   dialogues: {fileID: 11400000, guid: 1aa3483a0a268fc4d929068e62ff46b9, type: 2}
   interactImage: {fileID: 1654034800}
   pocketItems: []
@@ -32254,7 +32254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: vampiro
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: a9338412d5dff8e469a520ec6f0b53f2, type: 2}
   dialogues: {fileID: 0}
   interactImage: {fileID: 1779544195}
   pocketItems: []
@@ -33071,7 +33071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: ossessivo
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: fe3817ecf1e9fed4fbc7cb6f9d6e8a03, type: 2}
   dialogues: {fileID: 11400000, guid: 849093e3da4fb304889ed694c9ee7f5e, type: 2}
   interactImage: {fileID: 1202354607}
   pocketItems: []
@@ -33689,7 +33689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: anziano
-  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
+  choices: {fileID: 11400000, guid: 86a0db998b296ae4e87e42909bd80573, type: 2}
   dialogues: {fileID: 11400000, guid: 91b3e6fc1a3c25842993f859300cb014, type: 2}
   interactImage: {fileID: 1377774590282107379}
   pocketItems: []
