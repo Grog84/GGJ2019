@@ -9,8 +9,8 @@ namespace GGJ19 {
         public UIItemEntry[] regularItems;
         public UIItemEntry[] specialItems;
 
-        List<CharacterItem> displayedRegularItems;
-        List<CharacterItem> displayedSpecialItems;
+        List<CharacterItem> displayedRegularItems = new List<CharacterItem>();
+        List<CharacterItem> displayedSpecialItems = new List<CharacterItem>();
 
         int firstRegularSlotIdx = 0;
         int firstSpecialSlotIdx = 0;

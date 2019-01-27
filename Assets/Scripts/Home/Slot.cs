@@ -39,7 +39,7 @@ namespace GGJ19 {
 
         private void OnCollisionExit2D(Collision2D collision)
         {
-                Debug.Log("Collision Exit");
+
             if (collision.collider.gameObject.tag == "Player")
             {
                 SetHighlight(false);

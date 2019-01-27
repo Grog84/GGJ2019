@@ -10,17 +10,16 @@ namespace GGJ19 {
         public bool isSpecial;
 
         Image image;
-        Image childImage;
+        public Image childImage;
 
         private void Awake()
         {
-            image = GetComponent<Image>();
-            childImage = GetComponentInChildren<Image>();
+            image = GetComponent<Image>();           
         }
 
         public void SetVisible(bool value)
         {
-            if (value)
+            if (!value)
             {
                 image.color = Color.clear;
                 childImage.color = Color.clear;
