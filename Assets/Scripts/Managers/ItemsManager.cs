@@ -65,7 +65,6 @@ namespace GGJ19 {
             }
             else
             {
-                usedSpecialItems.Add(item);
                 return true;
             }
         }

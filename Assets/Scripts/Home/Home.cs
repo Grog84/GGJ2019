@@ -20,6 +20,11 @@ namespace GGJ19 {
             character.transform.position = transform.position;
         }
 
+        public void SetItem(CharacterItem item, Position position)
+        {
+            slots.SetObject(position, item);
+        }
+
 
     }
 }

@@ -14,7 +14,7 @@ namespace GGJ19
         bool isActive = false;
         public bool IsActive { get { return isActive; } }
 
-        int currentPosition;
+        public int currentPosition;
         int nextPosDelta = 0;
 
         private void Awake()
@@ -49,16 +49,17 @@ namespace GGJ19
                 {
                     if (Input.GetAxis("Vertical") > 0f)
                     {
-                        nextPosDelta = 3;
+                        nextPosDelta = -3;
                     }
                     else
                     {
-                        nextPosDelta = -3;
+                        nextPosDelta = 3;
                     }
                 }
                 else if (Input.GetButtonDown("Jump"))
                 {
                     UIItemList.I.Select(currentPosition);
+                    Hide();
                 }
 
                 if (nextPosDelta != 0)

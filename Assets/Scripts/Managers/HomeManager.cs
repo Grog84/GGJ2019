@@ -6,7 +6,12 @@ namespace GGJ19
 {
     public class HomeManager : MonoSingleton<HomeManager>
     {
-        Home activeHome;
+        public Home activeHome;
+
+        public void SetItemInPosition(CharacterItem item, Position pos)
+        {
+            activeHome.SetItem(item, pos);
+        }
     }
 
 }

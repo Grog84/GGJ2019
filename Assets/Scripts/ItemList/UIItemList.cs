@@ -21,6 +21,7 @@ namespace GGJ19 {
         public Cursor cursor;
 
         bool itemsVisible;
+        Position currentPos;
 
         private void Start()
         {
@@ -56,8 +57,8 @@ namespace GGJ19 {
             firstRegularSlotIdx = 0;
             firstSpecialSlotIdx = 0;
 
-            List<CharacterItem> displayedRegularItems = new List<CharacterItem>();
-            List<CharacterItem> displayedSpecialItems = new List<CharacterItem>();
+            displayedRegularItems = new List<CharacterItem>();
+            displayedSpecialItems = new List<CharacterItem>();
 
             text.text = "";
 
@@ -67,6 +68,8 @@ namespace GGJ19 {
         public void ShowItemsOfPosition(Position pos)
         {
             itemsVisible = true;
+            currentPos = pos;
+
             var displayedItems = ItemsManager.I.GetItemsOfPosition(pos);
 
             foreach (var item in displayedItems)
@@ -103,13 +106,15 @@ namespace GGJ19 {
 
         public RectTransform GetItemPosition(int i)
         {
-            if (i > 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
+            if (i >= 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
             {
                 if (i < displayedRegularItems.Count)
                 {
+                    text.text = displayedRegularItems[i].itemName;
                     return regularItems[i].gameObject.GetComponent<RectTransform>();
                 }
                 else {
+                    text.text = displayedSpecialItems[(i - displayedRegularItems.Count)].itemName;
                     return specialItems[(i - displayedRegularItems.Count)].gameObject.GetComponent<RectTransform>();
                 }
             }
@@ -121,17 +126,23 @@ namespace GGJ19 {
         {
             GameManager.I.INTERACTING = false;
 
-            if (i > 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
+            CharacterItem selectedItem = null;
+
+            if (i >= 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
             {
                 if (i < displayedRegularItems.Count)
                 {
-                    regularItems[i].gameObject.GetComponent<RectTransform>();
+                    selectedItem = displayedRegularItems[i];
                 }
                 else
                 {
-                    specialItems[(i - displayedRegularItems.Count)].gameObject.GetComponent<RectTransform>();
+                    selectedItem = displayedSpecialItems[(i - displayedRegularItems.Count)];
                 }
             }
+
+            HomeManager.I.SetItemInPosition(selectedItem, currentPos);
+
+            HideItems();
 
         }
 
