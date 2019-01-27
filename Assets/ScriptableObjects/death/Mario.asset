@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
-  m_Name: mario
+  m_Name: Mario
   m_EditorClassIdentifier: 
   character: mario
   item: {fileID: 11400000, guid: 8ad73feb47090ed4f8657f4d1a0a878b, type: 2}
