@@ -15,6 +15,11 @@ namespace GGJ19 {
         int firstRegularSlotIdx = 0;
         int firstSpecialSlotIdx = 0;
 
+        private void Start()
+        {
+            HideItems();
+        }
+
         public void HideItems()
         {
             foreach (var item in regularItems)

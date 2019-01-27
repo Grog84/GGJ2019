@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GGJ19 {
 
@@ -8,23 +9,32 @@ namespace GGJ19 {
     {
         public bool isSpecial;
 
-        SpriteRenderer m_renderer;
+        Image image;
+        Image childImage;
+
+        private void Awake()
+        {
+            image = GetComponent<Image>();
+            childImage = GetComponentInChildren<Image>();
+        }
 
         public void SetVisible(bool value)
         {
             if (value)
             {
-                m_renderer.color = Color.clear;
+                image.color = Color.clear;
+                childImage.color = Color.clear;
             }
             else
             {
-                m_renderer.color = Color.white;
+                image.color = Color.white;
+                childImage.color = Color.white;
             }
         }
 
         public void SetSprite(Sprite sprite)
         {
-            m_renderer.sprite = sprite;
+            childImage.sprite = sprite;
             SetVisible(true);
         }
         

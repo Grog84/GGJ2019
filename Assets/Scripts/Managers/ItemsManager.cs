@@ -6,17 +6,20 @@ namespace GGJ19 {
 
     public class ItemsManager : MonoSingleton<ItemsManager>
     {
-        public string[] folderNames;
 
-        List<CharacterItem> allItems;
+        string basePath = "ScriptableObjects/Items/";
 
         Dictionary<Position, List<CharacterItem>> itemDict = new Dictionary<Position, List<CharacterItem>>();
         List<CharacterItem> usedSpecialItems = new List<CharacterItem>();
 
         protected override void Initialise()
         {
+            Debug.Log(basePath + "Regular");
+            var regItem = ScriptableObjectsLoader.GetAllInstances<CharacterItem>(basePath + "Regular");
+            Debug.Log(basePath + "Special");
+            var specItem = ScriptableObjectsLoader.GetAllInstances<CharacterItem>(basePath + "Special");
 
-            foreach (var item in allItems)
+            foreach (var item in regItem)
             {
                 foreach (var pos in item.position)
                 {
@@ -29,10 +32,26 @@ namespace GGJ19 {
                         itemDict[pos] = new List<CharacterItem>();
                         itemDict[pos].Add(item);
                     }
-
                 }
-
             }
+
+            foreach (var item in specItem)
+            {
+                foreach (var pos in item.position)
+                {
+                    if (itemDict.ContainsKey(pos))
+                    {
+                        itemDict[pos].Add(item);
+                    }
+                    else
+                    {
+                        itemDict[pos] = new List<CharacterItem>();
+                        itemDict[pos].Add(item);
+                    }
+                }
+            }
+
+            
         }
 
         public List<CharacterItem> GetItemsOfPosition(Position pos)
