@@ -25,11 +25,13 @@ namespace GGJ19
             parkingPosition = startingPosition + Vector3.up * 1000;
 
             currentPosition = 0;
+
+            isActive = false;
         }
 
         private void Update()
-        {
-            
+        {           
+
             if (isActive)
             {
                 nextPosDelta = 0;
@@ -88,6 +90,12 @@ namespace GGJ19
 
         public void SetActive()
         {
+            StartCoroutine(SetActiveCO());
+        }
+
+        public IEnumerator SetActiveCO()
+        {
+            yield return null;
             isActive = true;
         }
 

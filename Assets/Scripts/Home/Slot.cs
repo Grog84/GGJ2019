@@ -30,7 +30,7 @@ namespace GGJ19 {
         private void OnCollisionEnter2D(Collision2D collision)
         {
 
-            if (collision.collider.gameObject.tag == "Player")
+            if (collision.collider.gameObject.tag == "Player" && GameManager.I.PHASE == GamePhase.BUILD)
             {
                 SetHighlight(true);
                 UIItemList.I.ShowItemsOfPosition(position);
@@ -40,7 +40,7 @@ namespace GGJ19 {
         private void OnCollisionExit2D(Collision2D collision)
         {
 
-            if (collision.collider.gameObject.tag == "Player")
+            if (collision.collider.gameObject.tag == "Player" && GameManager.I.PHASE == GamePhase.BUILD)
             {
                 SetHighlight(false);
                 UIItemList.I.HideItems();

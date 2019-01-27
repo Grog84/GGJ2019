@@ -8,6 +8,7 @@ namespace GGJ19
     {
 
         Character interactiveCharacter;
+        WorkSign sign;
 
         private void Update()
         {
@@ -15,6 +16,14 @@ namespace GGJ19
                 if (!GameManager.I.INTERACTING)
                 {
                     interactiveCharacter.Interact();
+                }
+            }
+
+            if (sign != null && Input.GetKeyDown(KeyCode.Space))
+            {
+                if (!GameManager.I.INTERACTING)
+                {
+                    sign.Interact();
                 }
             }
         }
@@ -26,6 +35,11 @@ namespace GGJ19
                 interactiveCharacter = collision.GetComponent<Character>();
                 interactiveCharacter.ShowInteraction(true);
             }
+            else if (collision.tag == "Sign")
+            {
+                sign = collision.GetComponent<WorkSign>();
+                sign.ShowInteraction(true);
+            }
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -34,6 +48,11 @@ namespace GGJ19
             {
                 interactiveCharacter.ShowInteraction(false);
                 interactiveCharacter = null;
+            }
+            else if (collision.tag == "Sign")
+            {
+                sign.ShowInteraction(false);
+                sign = null;
             }
         }
     }
