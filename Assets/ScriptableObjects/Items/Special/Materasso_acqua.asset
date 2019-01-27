@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
-  m_Name: DivanoAntico
+  m_Name: Materasso_acqua
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: eac8d0baa4a2d3542a030fe5355267c1, type: 3}
+  sprite: {fileID: 0}
   isSpecial: 0
-  style: 2
-  position: 00000000
+  style: 0
+  position: 
