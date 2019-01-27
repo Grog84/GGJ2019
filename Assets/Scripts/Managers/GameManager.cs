@@ -33,6 +33,8 @@ namespace GGJ19
         {
             finalScore += HomeManager.I.GetScore();
 
+
+
             HomeManager.I.AddComposition();
 
             gamePhase = GamePhase.EXPLORE;

@@ -7,17 +7,17 @@ namespace GGJ19
     [CreateAssetMenu]
     public class DeathEntry: ScriptableObject
     {
-        string character;
-        string item;
+        public string character;
+        public string item;
         [TextArea]
-        string text;
+        public string text;
     }
 
-    public class DeathManager : MonoBehaviour
+    public class DeathManager : MonoSingleton<DeathManager>
     {
         public DeathEntry[] entries;
 
-
+        public string deathItem = "";
 
 
     }
