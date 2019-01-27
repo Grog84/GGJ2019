@@ -144,7 +144,7 @@ Transform:
   - {fileID: 423013769}
   - {fileID: 1360618854}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97993183
 GameObject:
@@ -236,7 +236,7 @@ Transform:
   - {fileID: 416389820}
   - {fileID: 1285743836}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &207217411
 GameObject:
@@ -345,7 +345,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &264176764
 GameObject:
@@ -1728,7 +1728,7 @@ Transform:
   m_Children:
   - {fileID: 264176765}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &720198327
 MonoBehaviour:
@@ -1889,7 +1889,7 @@ Transform:
   m_LocalScale: {x: 8, y: 16, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &930445793
 BoxCollider2D:
@@ -15994,7 +15994,7 @@ RectTransform:
   m_Children:
   - {fileID: 608407722}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16129,7 +16129,7 @@ Transform:
   m_Children:
   - {fileID: 554411231}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -0.002, y: 0, z: 0}
 --- !u!114 &1885277335
 MonoBehaviour:
@@ -16147,3 +16147,60 @@ MonoBehaviour:
   dialogues: {fileID: 11400000, guid: 6a0f88d47745103438b70bab17b104fb, type: 2}
   interactImage: {fileID: 554411232}
   pocketItems: []
+--- !u!1001 &1886278852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1886278853, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_Name
+      value: rocker
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.437576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.199592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886278861, guid: 734319186888e844c930e1e27324b9b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 734319186888e844c930e1e27324b9b2, type: 3}
