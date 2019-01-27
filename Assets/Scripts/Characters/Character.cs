@@ -28,6 +28,7 @@ namespace GGJ19 {
         {
             pockets = GetComponentInChildren<CharacterPockets>();
             charAnimation = GetComponent<CharacterAnimation>();
+
             charAnimation.characterName = m_name;
         }
 
