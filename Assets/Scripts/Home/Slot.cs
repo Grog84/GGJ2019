@@ -24,6 +24,10 @@ namespace GGJ19 {
 
         public void SetSprite(Sprite sprite)
         {
+            if (m_renderer == null)
+            {
+                m_renderer = GetComponent<SpriteRenderer>();
+            }
             m_renderer.sprite = sprite;
         }
 

@@ -12,9 +12,19 @@ namespace GGJ19 {
 
         public void Interact()
         {
-            HomeManager.I.SetBuildingHome(mHome);
+            if (GameManager.I.PHASE == GamePhase.EXPLORE)
+            {
+                HomeManager.I.SetBuildingHome(mHome);
 
-            GameManager.I.GoToBuild();
+                GameManager.I.GoToBuild();
+            }
+            else
+            {
+                if (HomeManager.I.IsComplete())
+                {
+                    GameManager.I.GoToExplore();
+                }
+            }
         }
 
         public void ShowInteraction(bool status)

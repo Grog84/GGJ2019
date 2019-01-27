@@ -13,16 +13,8 @@ MonoBehaviour:
   m_Name: TestChoices
   m_EditorClassIdentifier: 
   characterName: Test
-  items:
-  - position: 0
-    item: {fileID: 0}
-  - position: 1
-    item: {fileID: 0}
-  - position: 2
-    item: {fileID: 0}
-  - position: 3
-    item: {fileID: 0}
-  - position: 4
-    item: {fileID: 0}
-  - position: 5
-    item: {fileID: 0}
+  lovedItems:
+  - {fileID: 11400000, guid: 661610d30ea15da49834899fb5f1e988, type: 2}
+  deathItems:
+  - {fileID: 11400000, guid: 71c8d7f2797269141826991dd1a9bb02, type: 2}
+  style: 0

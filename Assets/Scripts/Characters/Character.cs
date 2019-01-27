@@ -10,6 +10,8 @@ namespace GGJ19 {
 
     public class Character : MonoBehaviour
     {
+        public string name;
+
         public CharacterChoices choices;
         public CharacterDialogues dialogues;
 

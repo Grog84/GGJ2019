@@ -9,6 +9,8 @@ namespace GGJ19
     public enum GamePhase { EXPLORE, BUILD }
     public class GameManager : MonoSingleton<GameManager>
     {
+        int finalScore = 0;
+
         GamePhase gamePhase;
         public GamePhase PHASE {
             get { return gamePhase; }
@@ -29,8 +31,13 @@ namespace GGJ19
 
         public void GoToExplore()
         {
+            finalScore += HomeManager.I.GetScore();
+
+            HomeManager.I.AddComposition();
+
             gamePhase = GamePhase.EXPLORE;
             SceneManager.LoadScene(0);
+
         }
 
     }

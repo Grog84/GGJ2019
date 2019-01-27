@@ -14,7 +14,8 @@ namespace GGJ19 {
 
         Dictionary<Position, CharacterItem> composition = new Dictionary<Position, CharacterItem>();
 
-        public WorkSign sign;
+        public WorkSign startSign;
+        public WorkSign stopSign;
 
         private void Awake()
         {
@@ -32,11 +33,13 @@ namespace GGJ19 {
         {
             if (GameManager.I.PHASE == GamePhase.BUILD)
             {
-                sign.gameObject.SetActive(false);
+                startSign.gameObject.SetActive(false);
+                stopSign.gameObject.SetActive(true);
             }
             else
             {
-                sign.gameObject.SetActive(true);
+                startSign.gameObject.SetActive(true);
+                stopSign.gameObject.SetActive(false);
             }
         }
 
@@ -47,6 +50,10 @@ namespace GGJ19 {
 
         public void SetItem(CharacterItem item, Position position)
         {
+            if (slots == null)
+            {
+                slots = GetComponentInChildren<SlotsManager>();
+            }
             slots.SetObject(position, item);
             composition[position] = item;
         }
@@ -81,6 +88,42 @@ namespace GGJ19 {
 
             return score;
 
+        }
+
+        public Dictionary<Position, CharacterItem> GetComposition()
+        {
+            return composition;
+        }
+
+        public bool IsComplete()
+        {
+            foreach (Position pos in (Position[])Enum.GetValues(typeof(Position)))
+            {
+                if (composition[pos] == null)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public void BuildFromComposition(Dictionary<Position, CharacterItem> composition)
+        {
+            this.composition = composition;
+            foreach (Position pos in (Position[])Enum.GetValues(typeof(Position)))
+            {
+                Debug.Log(pos);
+                Debug.Log(this.composition[pos]);
+                SetItem(this.composition[pos], pos);
+            }
+
+            startSign.gameObject.SetActive(false);
+        }
+
+        public Home GetClone()
+        {
+            return (Home)this.MemberwiseClone();
         }
 
 
