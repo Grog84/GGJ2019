@@ -22,6 +22,7 @@ namespace GGJ19 {
             {
                 if (HomeManager.I.IsComplete())
                 {
+                    FixCanvas.I.gameObject.SetActive(false);
                     GameManager.I.GoToExplore();
                 }
             }
