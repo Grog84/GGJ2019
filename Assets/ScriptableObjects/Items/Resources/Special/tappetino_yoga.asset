@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: tappetino_yoga
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  itemName: Yoga matress
+  sprite: {fileID: 21300000, guid: d4244579080ae664c99edf6cd757a25f, type: 3}
   isSpecial: 1
   style: 0
   position: 0000000002000000

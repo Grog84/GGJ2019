@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: SediaLettura
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  itemName: Reading armchair
+  sprite: {fileID: 21300000, guid: d8a86181006b73d40986e52b3878b15d, type: 3}
   isSpecial: 1
   style: 0
   position: 0000000002000000

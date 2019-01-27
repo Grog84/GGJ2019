@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: BruttoOggetto
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  itemName: Wooden Art
+  sprite: {fileID: 21300000, guid: 9a0f51f7e7e0e8645848a27134d22254, type: 3}
   isSpecial: 1
   style: 0
   position: 03000000
