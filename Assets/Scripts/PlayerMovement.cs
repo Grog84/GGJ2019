@@ -31,13 +31,13 @@ namespace GGJ19
             if (!GameManager.I.INTERACTING)
             {
                 rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
+                if (movement.x != 0f && !isFlipped && Mathf.Sign(movement.x) == -1f) {
+                    Flip();
+                } else if (movement.x != 0f && isFlipped && Mathf.Sign(movement.x) == 1f) {
+                    Flip();
+                }
             }
 
-            if (movement.x != 0f && !isFlipped && Mathf.Sign(movement.x) == -1f) {
-                Flip();
-            } else if (movement.x != 0f && isFlipped && Mathf.Sign(movement.x) == 1f) {
-                Flip();
-            }
         }
 
         void Flip()
