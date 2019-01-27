@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 namespace GGJ19 {
 
@@ -15,13 +16,33 @@ namespace GGJ19 {
         int firstRegularSlotIdx = 0;
         int firstSpecialSlotIdx = 0;
 
+        public TextMeshProUGUI text;
+
+        public Cursor cursor;
+
+        bool itemsVisible;
+
         private void Start()
         {
             HideItems();
+            text.text = "";
+        }
+
+        private void Update()
+        {
+            if (itemsVisible && Input.GetButtonDown("Jump") && !cursor.IsActive)
+            {
+                cursor.Show();
+                cursor.SetActive();
+
+                GameManager.I.INTERACTING = true;
+            }
         }
 
         public void HideItems()
         {
+            itemsVisible = false;
+
             foreach (var item in regularItems)
             {
                 item.SetVisible(false);
@@ -34,10 +55,18 @@ namespace GGJ19 {
 
             firstRegularSlotIdx = 0;
             firstSpecialSlotIdx = 0;
+
+            List<CharacterItem> displayedRegularItems = new List<CharacterItem>();
+            List<CharacterItem> displayedSpecialItems = new List<CharacterItem>();
+
+            text.text = "";
+
+            cursor.Hide();
         }
 
         public void ShowItemsOfPosition(Position pos)
         {
+            itemsVisible = true;
             var displayedItems = ItemsManager.I.GetItemsOfPosition(pos);
 
             foreach (var item in displayedItems)
@@ -68,6 +97,40 @@ namespace GGJ19 {
                 specialItems[firstSpecialSlotIdx].SetSprite(item.sprite);
                 displayedSpecialItems.Add(item);
                 firstSpecialSlotIdx++;
+            }
+
+        }
+
+        public RectTransform GetItemPosition(int i)
+        {
+            if (i > 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
+            {
+                if (i < displayedRegularItems.Count)
+                {
+                    return regularItems[i].gameObject.GetComponent<RectTransform>();
+                }
+                else {
+                    return specialItems[(i - displayedRegularItems.Count)].gameObject.GetComponent<RectTransform>();
+                }
+            }
+
+            return null;
+        }
+
+        public void Select(int i)
+        {
+            GameManager.I.INTERACTING = false;
+
+            if (i > 0 && i < (displayedRegularItems.Count + displayedSpecialItems.Count))
+            {
+                if (i < displayedRegularItems.Count)
+                {
+                    regularItems[i].gameObject.GetComponent<RectTransform>();
+                }
+                else
+                {
+                    specialItems[(i - displayedRegularItems.Count)].gameObject.GetComponent<RectTransform>();
+                }
             }
 
         }
