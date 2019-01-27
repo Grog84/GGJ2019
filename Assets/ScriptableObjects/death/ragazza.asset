@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: ragazza
+  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  character: ragazza
+  item: {fileID: 11400000, guid: 259e7957a97338e47a90378fe05b981e, type: 2}
+  text: Oh, the poor girl! I understand you thonght letters were a nice memory from
+    her past, but she actualy died after reading a letter of a former boyfriend, inviting
+    her to his wedding!
