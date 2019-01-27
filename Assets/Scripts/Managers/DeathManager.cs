@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace GGJ19
 {
-    [SerializeField]
-    public struct DeathEntry
+    [CreateAssetMenu]
+    public class DeathEntry: ScriptableObject
     {
         string character;
         string item;
