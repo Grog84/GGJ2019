@@ -62,6 +62,15 @@ namespace GGJ19
 
         public void RebuildFinishedHouses()
         {
+            StartCoroutine(RebuildFinishedHousesCO());
+
+
+        }
+
+        public IEnumerator RebuildFinishedHousesCO()
+        {
+            yield return null;
+
             var allHomes = FindObjectsOfType<Home>();
 
             foreach (KeyValuePair<string, Dictionary<Position, CharacterItem>> entry in homeCompositions)

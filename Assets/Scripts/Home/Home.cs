@@ -17,6 +17,8 @@ namespace GGJ19 {
         public WorkSign startSign;
         public WorkSign stopSign;
 
+        bool complete = false;
+
         private void Awake()
         {
             slots = GetComponentInChildren<SlotsManager>();
@@ -36,9 +38,14 @@ namespace GGJ19 {
                 startSign.gameObject.SetActive(false);
                 stopSign.gameObject.SetActive(true);
             }
-            else
+            else if (!complete)
             {
                 startSign.gameObject.SetActive(true);
+                stopSign.gameObject.SetActive(false);
+            }
+            else
+            {
+                startSign.gameObject.SetActive(false);
                 stopSign.gameObject.SetActive(false);
             }
         }
@@ -113,11 +120,9 @@ namespace GGJ19 {
             this.composition = composition;
             foreach (Position pos in (Position[])Enum.GetValues(typeof(Position)))
             {
-                Debug.Log(pos);
-                Debug.Log(this.composition[pos]);
                 SetItem(this.composition[pos], pos);
             }
-
+            complete = true;
             startSign.gameObject.SetActive(false);
         }
 

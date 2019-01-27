@@ -30752,7 +30752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: hippy
   choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 11400000, guid: 52fb01c39a9d3144189646bc5808e604, type: 2}
   interactImage: {fileID: 1906761886}
@@ -31216,8 +31216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  choices: {fileID: 0}
+  name: mario
+  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 11400000, guid: 6a0f88d47745103438b70bab17b104fb, type: 2}
   interactImage: {fileID: 1145292455}
   pocketItems: []
@@ -31598,8 +31598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  choices: {fileID: 0}
+  name: rocker
+  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 11400000, guid: 1aa3483a0a268fc4d929068e62ff46b9, type: 2}
   interactImage: {fileID: 1654034800}
   pocketItems: []
@@ -32117,8 +32117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  choices: {fileID: 0}
+  name: vampiro
+  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 0}
   interactImage: {fileID: 1779544195}
   pocketItems: []
@@ -32854,8 +32854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  choices: {fileID: 0}
+  name: ossessivo
+  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 11400000, guid: 849093e3da4fb304889ed694c9ee7f5e, type: 2}
   interactImage: {fileID: 1202354607}
   pocketItems: []
@@ -33472,8 +33472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  choices: {fileID: 0}
+  name: anziano
+  choices: {fileID: 11400000, guid: 58f217778824fbb4e94a7d5674f5ee24, type: 2}
   dialogues: {fileID: 11400000, guid: 91b3e6fc1a3c25842993f859300cb014, type: 2}
   interactImage: {fileID: 1377774590282107379}
   pocketItems: []
@@ -33812,7 +33812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: boss
   choices: {fileID: 0}
   dialogues: {fileID: 11400000, guid: 48af3a02078da08478d8dd7609edfd26, type: 2}
   interactImage: {fileID: 718315730}
