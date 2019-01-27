@@ -140,6 +140,28 @@ namespace GGJ19 {
                 }
             }
 
+
+            if (selectedItem.isSpecial)
+            {
+                var itemInPos = HomeManager.I.GetItemInPosition(currentPos);
+                if (itemInPos == null || !itemInPos.isSpecial)
+                {
+                    ItemsManager.I.AddUsedSpecialItem(selectedItem);
+                }
+                else
+                {
+                    ItemsManager.I.RemoveUsedSpecialItem(itemInPos);
+                    ItemsManager.I.AddUsedSpecialItem(selectedItem);
+                }
+            }
+            else {
+                var itemInPos = HomeManager.I.GetItemInPosition(currentPos);
+                if (itemInPos == null || itemInPos.isSpecial)
+                {
+                    ItemsManager.I.RemoveUsedSpecialItem(itemInPos);
+                }
+            }
+
             HomeManager.I.SetItemInPosition(selectedItem, currentPos);
 
             HideItems();

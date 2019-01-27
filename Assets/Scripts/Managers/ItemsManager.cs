@@ -69,6 +69,16 @@ namespace GGJ19 {
             }
         }
 
+        public void AddUsedSpecialItem(CharacterItem item)
+        {
+            usedSpecialItems.Add(item);
+        }
+
+        public void RemoveUsedSpecialItem(CharacterItem item)
+        {
+            usedSpecialItems.Remove(item);
+        }
+
 
 
     }

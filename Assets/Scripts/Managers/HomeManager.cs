@@ -11,6 +11,13 @@ namespace GGJ19
         public void SetItemInPosition(CharacterItem item, Position pos)
         {
             activeHome.SetItem(item, pos);
+        
+        }
+
+        public CharacterItem GetItemInPosition(Position pos)
+        {
+            return activeHome.GetItem(pos);
+
         }
     }
 
