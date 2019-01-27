@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: hippy-orto
+  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  character: hippy
+  item: {fileID: 11400000, guid: f11d204ed2e8c4a48a4a06a22260823b, type: 2}
+  text: How could you put a vegetable garden in her place! Don't you know that once
+    she almost died when a pot from her own vegetabes fell n her head?
