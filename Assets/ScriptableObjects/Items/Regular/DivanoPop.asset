@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: DivanoPop
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 87ba7e3fc2c352148a19f9a60491db96, type: 3}
   isSpecial: 0
-  style: 0
-  position: 
+  style: 3
+  position: 00000000
