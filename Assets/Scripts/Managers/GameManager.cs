@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 namespace GGJ19
 {
 
-    public enum GamePhase { EXPLORE, BUILD }
+    public enum GamePhase { EXPLORE, BUILD, DEATH, MENU }
     public class GameManager : MonoSingleton<GameManager>
     {
         int finalScore = 0;

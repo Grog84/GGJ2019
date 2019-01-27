@@ -33,8 +33,12 @@ namespace GGJ19
                     text.text = item.text;
 
                 }
+
+                
             }
         }
+
+        
 
 
     }
