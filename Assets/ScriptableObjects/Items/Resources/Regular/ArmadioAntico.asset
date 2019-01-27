@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: ArmadioAntico
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: eac8d0baa4a2d3542a030fe5355267c1, type: 3}
+  sprite: {fileID: 21300000, guid: 0b2f1171fa48253429b476ce586a3f16, type: 3}
   isSpecial: 0
   style: 2
-  position: 00000000
+  position: 02000000

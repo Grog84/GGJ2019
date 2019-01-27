@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: tappetino_yoga
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  isSpecial: 0
+  isSpecial: 1
   style: 0
-  position: 
+  position: 0000000002000000
