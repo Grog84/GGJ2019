@@ -37,6 +37,7 @@ namespace GGJ19
             }
             else if (collision.tag == "Sign")
             {
+                SfxManager.I.Play("sfx_popup_interazione");
                 sign = collision.GetComponent<WorkSign>();
                 sign.ShowInteraction(true);
             }
@@ -51,6 +52,7 @@ namespace GGJ19
             }
             else if (collision.tag == "Sign")
             {
+                SfxManager.I.Play("sfx_popup_interazione");
                 sign.ShowInteraction(false);
                 sign = null;
             }

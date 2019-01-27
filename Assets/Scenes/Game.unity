@@ -30910,6 +30910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ragazza
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7f62a15fb3b9f1c409ff69b02d33a252, type: 3}
+      propertyPath: m_TagString
+      value: Character
+      objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 7f62a15fb3b9f1c409ff69b02d33a252, type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.5935006
@@ -32262,6 +32266,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304822282, guid: 2f1ce81a76a9ccb4daf6553486597b4e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304822284, guid: 2f1ce81a76a9ccb4daf6553486597b4e, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1715577304, guid: 2f1ce81a76a9ccb4daf6553486597b4e, type: 3}
       propertyPath: m_havePropertiesChanged
@@ -34167,6 +34179,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1221538654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1304822282, guid: 2f1ce81a76a9ccb4daf6553486597b4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 860986900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1232187335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36930,6 +36948,18 @@ MonoBehaviour:
     - {x: 0, y: 0, z: 0, w: 0}
     - {x: 0, y: 0, z: 0, w: 0}
   m_Flip: 0
+--- !u!114 &1981819319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1715577304, guid: 2f1ce81a76a9ccb4daf6553486597b4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 860986900}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2024388178
 GameObject:
   m_ObjectHideFlags: 0
@@ -38538,6 +38568,16 @@ PrefabInstance:
       propertyPath: voicesSfx.Array.data[26].sfx
       value: sfx_voice_metal_3
       objectReference: {fileID: 0}
+    - target: {fileID: 4783229976690398191, guid: 0c1285bfef93d374a911fab62f1aee5b,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1981819319}
+    - target: {fileID: 4783229976690398191, guid: 0c1285bfef93d374a911fab62f1aee5b,
+        type: 3}
+      propertyPath: deathPanel
+      value: 
+      objectReference: {fileID: 1221538654}
     m_RemovedComponents:
     - {fileID: 4071987139858281002, guid: 0c1285bfef93d374a911fab62f1aee5b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c1285bfef93d374a911fab62f1aee5b, type: 3}

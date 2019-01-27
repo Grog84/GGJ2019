@@ -24,6 +24,12 @@ namespace GGJ19
                 Fader.I.FadeIn();
 
             }
+
+            if (DeathManager.I != null)
+            {
+                DeathManager.I.Hide();
+
+            }
         }
     }
 }
