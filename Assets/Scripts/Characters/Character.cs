@@ -18,6 +18,7 @@ namespace GGJ19 {
         public Sprite[] pocketItems;
 
         CharacterPockets pockets;
+        public Transform mainBone;
 
         private void Start()
         {
@@ -35,7 +36,7 @@ namespace GGJ19 {
             GameManager.I.INTERACTING = true;
             ShowInteraction(false);
 
-            CameraManager.I.StartFollowing(transform);
+            CameraManager.I.StartFollowing(mainBone);
             CameraManager.I.ZoomIn();
 
             pockets.Show(pocketItems);

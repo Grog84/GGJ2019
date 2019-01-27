@@ -11,7 +11,7 @@ namespace GGJ19
         private Vector2 movement = Vector2.zero;
         private Rigidbody2D rb;
 
-        bool isFlipped = false;
+        bool isFlipped = true;
 
 
         private void Start()
