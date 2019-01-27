@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: ChitarraElettrica
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  itemName: Electric guitar
+  sprite: {fileID: 21300000, guid: b7547b9ecb5ac284fb825b2199884051, type: 3}
   isSpecial: 1
   style: 0
   position: 02000000

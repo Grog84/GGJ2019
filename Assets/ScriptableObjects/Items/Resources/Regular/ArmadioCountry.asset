@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: ArmadioCountry
   m_EditorClassIdentifier: 
+  itemName: Wardrobe
   sprite: {fileID: 21300000, guid: 2af84a5d428b47b44959924d6fcd4e43, type: 3}
   isSpecial: 0
   style: 1

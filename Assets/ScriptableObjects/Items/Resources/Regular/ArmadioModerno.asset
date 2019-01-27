@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: ArmadioModerno
   m_EditorClassIdentifier: 
+  itemName: Wardrobe
   sprite: {fileID: 21300000, guid: f6a43a3ad43cfbf4e89d7bef0180440b, type: 3}
   isSpecial: 0
   style: 0

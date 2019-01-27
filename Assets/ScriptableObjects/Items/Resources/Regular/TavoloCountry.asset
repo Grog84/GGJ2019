@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525729cf65751614f8044c4b1b6eaef1, type: 3}
   m_Name: TavoloCountry
   m_EditorClassIdentifier: 
+  itemName: Table
   sprite: {fileID: 21300000, guid: 4661bec0bbe192f49b4336098205809f, type: 3}
   isSpecial: 0
   style: 1
