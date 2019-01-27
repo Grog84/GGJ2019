@@ -11,12 +11,12 @@ namespace GGJ19 {
         {
             AudioClip sfx;
 
-            sfx = LoadClip(Path.Combine("Sfx", SfxNameConverter.I.GetSfx(sfxName)));
+            sfx = LoadClip(Path.Combine("Audio", sfxName));
 
-            //sfx = ConfigManager.SoundStyle.GetSfx(sfxName);
+            ////sfx = ConfigManager.SoundStyle.GetSfx(sfxName);
 
-            //if(sfx == null)
-            //    sfx = LoadClip(Path.Combine("Sfx", sfxName));
+            if (sfx == null)
+                sfx = LoadClip(Path.Combine("Sfx", sfxName));
 
             return sfx;
         }
