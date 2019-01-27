@@ -19,10 +19,10 @@ MonoBehaviour:
       so effective!
 
 '
-    emotion: 1
+    emotion: 0
   - text: Our bodies are as temples.. you should take better care of yourself... be
       carefull of what you eat and what you wear!
-    emotion: 3
+    emotion: 0
   - text: I wear and eat only with respect and care for the earth and everything and
       everyone around me...
     emotion: 0
