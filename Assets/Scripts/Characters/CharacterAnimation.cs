@@ -17,6 +17,7 @@ namespace GGJ19
         public void SetEmotion(Emotion emotion)
         {
             controller.SetInteger("stato", (int)emotion);
+            PlayRandomVoice();
         }
 
         public void PlayRandomVoice()
