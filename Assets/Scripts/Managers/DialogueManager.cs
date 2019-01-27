@@ -49,6 +49,8 @@ namespace GGJ19 {
                     yield return StartCoroutine(HideCO());
                 }
 
+                SfxManager.I.Play("sfx_pannello_testo");
+
                 text.text = dialogue.text;
                 charAnimation.SetEmotion(dialogue.emotion);
 
@@ -77,6 +79,7 @@ namespace GGJ19 {
         }
         public IEnumerator HideCO()
         {
+            SfxManager.I.Play("sfx_pannello_testo");
             panel.DOMoveY(parkingPosition, transitionTime);
             yield return new WaitForSeconds(transitionTime);
 

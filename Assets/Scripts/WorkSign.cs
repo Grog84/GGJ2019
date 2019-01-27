@@ -16,6 +16,7 @@ namespace GGJ19 {
             {
                 HomeManager.I.SetBuildingHome(mHome);
 
+                SfxManager.I.Play("sfx_passaggio_build");
                 GameManager.I.GoToBuild();
             }
             else
@@ -23,6 +24,7 @@ namespace GGJ19 {
                 if (HomeManager.I.IsComplete())
                 {
                     FixCanvas.I.gameObject.SetActive(false);
+                    SfxManager.I.Play("sfx_ritorno_gioco");
                     GameManager.I.GoToExplore();
                 }
             }

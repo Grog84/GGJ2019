@@ -68,6 +68,16 @@ namespace GGJ19
             SceneManager.LoadScene(1);
             Fader.I.FadeOut();
         }
+
+        private void OnEnable()
+        {
+            if (DeathManager.I != null)
+            {
+                DeathManager.I.Hide();
+
+            }
+        }
+
     }
 
 }

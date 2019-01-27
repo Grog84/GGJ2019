@@ -32,8 +32,12 @@ namespace GGJ19
             {
                 if (item.item == deathItem && item.character == characterName)
                 {
+
+                    SfxManager.I.Play("music_game_over");
                     deathPanel.SetActive(true);
                     text.text = item.text;
+
+                    StartCoroutine(ShowDeathCO());
 
                 }
 

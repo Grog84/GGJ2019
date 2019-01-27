@@ -34,6 +34,7 @@ namespace GGJ19 {
 
         public void ShowInteraction(bool status)
         {
+            SfxManager.I.Play("sfx_popup_interazione");
             float targetAlpha = status ? 1f : 0f;
             interactImage.DOFade(targetAlpha, 0.5f);
         }

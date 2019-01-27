@@ -46,6 +46,7 @@ namespace GGJ19
                     {
                         nextPosDelta = -1;
                     }
+                    SfxManager.I.Play("sfx_over");
                 }
                 else if (Input.GetButtonDown("Vertical"))
                 {
@@ -57,11 +58,13 @@ namespace GGJ19
                     {
                         nextPosDelta = 3;
                     }
+                    SfxManager.I.Play("sfx_over");
                 }
                 else if (Input.GetButtonDown("Jump"))
                 {
                     UIItemList.I.Select(currentPosition);
                     Hide();
+                    SfxManager.I.Play("sfx_posizioamento");
                 }
 
                 if (nextPosDelta != 0)

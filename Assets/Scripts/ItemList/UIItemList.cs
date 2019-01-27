@@ -42,6 +42,8 @@ namespace GGJ19 {
 
         public void HideItems()
         {
+            SfxManager.I.Play("sfx_deattivazione_posizionamento");
+
             itemsVisible = false;
 
             foreach (var item in regularItems)
@@ -67,6 +69,8 @@ namespace GGJ19 {
 
         public void ShowItemsOfPosition(Position pos)
         {
+            SfxManager.I.Play("sfx_attivazione_posizionamento");
+
             itemsVisible = true;
             currentPos = pos;
 
