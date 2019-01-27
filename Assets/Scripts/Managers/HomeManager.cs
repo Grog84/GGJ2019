@@ -21,7 +21,7 @@ namespace GGJ19
         public void SetBuildingHome(Home home)
         {     
             buildingHome = home.GetClone();
-            buildingHomeName = buildingHome.character.name;
+            buildingHomeName = buildingHome.character.m_name;
         }
 
         public void SetItemInPosition(CharacterItem item, Position pos)
@@ -78,7 +78,7 @@ namespace GGJ19
                 // do something with entry.Value or entry.Key
                 foreach (var item in allHomes)
                 {
-                    if (entry.Key == item.character.name)
+                    if (entry.Key == item.character.m_name)
                     {
                         item.BuildFromComposition(entry.Value);
                         item.MoveCharacterIn();

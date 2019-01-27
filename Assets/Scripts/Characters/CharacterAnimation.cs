@@ -11,7 +11,7 @@ namespace GGJ19
     {
         public Animator controller;
 
-        public string characterName;
+        public string characterName = "";
 
 
         public void SetEmotion(Emotion emotion)

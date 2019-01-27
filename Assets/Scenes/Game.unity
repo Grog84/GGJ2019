@@ -31064,7 +31064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: ragazza
+  m_name: ragazza
   choices: {fileID: 11400000, guid: b2208a650bd26914d856564a86652ade, type: 2}
   dialogues: {fileID: 11400000, guid: 92ac1be27ad17ed4097e3586deb94ad2, type: 2}
   interactImage: {fileID: 1779544195}
@@ -31214,7 +31214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 681035026}
   characterName: 
 --- !u!1001 &718315729
 PrefabInstance:
@@ -32006,7 +32006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: hippy
+  m_name: hippy
   choices: {fileID: 11400000, guid: 5989943668b9d5b48bf51c38edf50f9e, type: 2}
   dialogues: {fileID: 11400000, guid: 52fb01c39a9d3144189646bc5808e604, type: 2}
   interactImage: {fileID: 1906761886}
@@ -32024,8 +32024,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 794780057}
   characterName: 
+--- !u!95 &794780057 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4852679882134726764, guid: 8fee4c85399b2db49ac05c4100d61fa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 794780049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &822240873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32634,7 +32640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: mario
+  m_name: mario
   choices: {fileID: 11400000, guid: e2725548808dee249bd3045e4bd7d7d7, type: 2}
   dialogues: {fileID: 11400000, guid: 6a0f88d47745103438b70bab17b104fb, type: 2}
   interactImage: {fileID: 1145292455}
@@ -32652,8 +32658,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 938153629}
   characterName: 
+--- !u!95 &938153629 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1565376720, guid: 158ed4834904d1d48a5cbdbe86891274,
+    type: 3}
+  m_PrefabInstance: {fileID: 938153621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &968063163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1700648605701878119, guid: c046df4d1ed82554db2cdbd44ecb12b6,
@@ -33369,7 +33381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: rocker
+  m_name: rocker
   choices: {fileID: 11400000, guid: a9b79e063cb51424b99cc84f5516d402, type: 2}
   dialogues: {fileID: 11400000, guid: 1aa3483a0a268fc4d929068e62ff46b9, type: 2}
   interactImage: {fileID: 1654034800}
@@ -33393,8 +33405,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1032079446}
   characterName: 
+--- !u!95 &1032079446 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1886278862, guid: 734319186888e844c930e1e27324b9b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1032079438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048026021
 GameObject:
   m_ObjectHideFlags: 0
@@ -34400,7 +34418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: vampiro
+  m_name: vampiro
   choices: {fileID: 11400000, guid: a9338412d5dff8e469a520ec6f0b53f2, type: 2}
   dialogues: {fileID: 0}
   interactImage: {fileID: 1779544195}
@@ -34424,8 +34442,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1232187343}
   characterName: 
+--- !u!95 &1232187343 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3311826161242002434, guid: 5541c8ebf569f5b4b82c5e5bf4b7e990,
+    type: 3}
+  m_PrefabInstance: {fileID: 1232187335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234187124
 GameObject:
   m_ObjectHideFlags: 0
@@ -35808,7 +35832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: ossessivo
+  m_name: ossessivo
   choices: {fileID: 11400000, guid: fe3817ecf1e9fed4fbc7cb6f9d6e8a03, type: 2}
   dialogues: {fileID: 11400000, guid: 849093e3da4fb304889ed694c9ee7f5e, type: 2}
   interactImage: {fileID: 1202354607}
@@ -35832,8 +35856,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 1636832189}
   characterName: 
+--- !u!95 &1636832189 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 528909686, guid: b72d1cf2019f6d84396b4d86b4d3ae8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1636832181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1654034799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37396,7 +37426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: anziano
+  m_name: anziano
   choices: {fileID: 11400000, guid: 86a0db998b296ae4e87e42909bd80573, type: 2}
   dialogues: {fileID: 11400000, guid: 91b3e6fc1a3c25842993f859300cb014, type: 2}
   interactImage: {fileID: 1377774590282107379}
@@ -37420,8 +37450,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 907ca6428ba0737418743faf9dbbd86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 2073819340}
   characterName: 
+--- !u!95 &2073819340 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1198990907, guid: d9415cc736836ea40b2790a357897136,
+    type: 3}
+  m_PrefabInstance: {fileID: 2073819331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2077672834
 GameObject:
   m_ObjectHideFlags: 0
@@ -37873,7 +37909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0b9b8a887edd4a8993c62b22adc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: boss
+  m_name: boss
   choices: {fileID: 0}
   dialogues: {fileID: 11400000, guid: 48af3a02078da08478d8dd7609edfd26, type: 2}
   interactImage: {fileID: 718315730}

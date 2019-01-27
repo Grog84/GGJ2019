@@ -10,7 +10,7 @@ namespace GGJ19 {
 
     public class Character : MonoBehaviour
     {
-        public string name;
+        public string m_name;
 
         public CharacterChoices choices;
         public CharacterDialogues dialogues;
@@ -28,7 +28,7 @@ namespace GGJ19 {
         {
             pockets = GetComponentInChildren<CharacterPockets>();
             charAnimation = GetComponent<CharacterAnimation>();
-            charAnimation.name = name;
+            charAnimation.characterName = m_name;
         }
 
         public void ShowInteraction(bool status)
