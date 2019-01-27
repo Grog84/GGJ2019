@@ -3,8 +3,7 @@ using System;
 
 namespace GGJ19
 {
-    [Serializable]
-    public class VoiceSystem: MonoSingleton<VoiceSystem>
+    public class MVoiceSystem: MonoSingleton<MVoiceSystem>
     {
         public VoiceSfx[] voicesSfx;
 

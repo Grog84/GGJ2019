@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3988585991498975770
+--- !u!1 &3467390903196250340
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7142927141226897430}
-  - component: {fileID: 4071987139858281002}
+  - component: {fileID: 5048156767502896630}
+  - component: {fileID: 3880478017296635740}
   m_Layer: 0
-  m_Name: Voice
+  m_Name: VoiceSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7142927141226897430
+--- !u!4 &5048156767502896630
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3988585991498975770}
+  m_GameObject: {fileID: 3467390903196250340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,73 +31,46 @@ Transform:
   m_Father: {fileID: 4783229977392993411}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4071987139858281002
+--- !u!114 &3880478017296635740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3988585991498975770}
+  m_GameObject: {fileID: 3467390903196250340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53639da6f8455164990d31e55b43aa1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 711f2a6da0045de49ab2393b815f16ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   voicesSfx:
-  - charName: agente
-    sfx: sfx_player_hi_1
-  - charName: agente
-    sfx: sfx_player_hi_2
-  - charName: agente
-    sfx: sfx_player_hi_3
-  - charName: boss
-    sfx: sfx_voice_capo_1
-  - charName: boss
-    sfx: sfx_voice_capo_2
-  - charName: boss
-    sfx: sfx_voice_capo_3
-  - charName: anziano
-    sfx: sfx_voice_old_1
-  - charName: anziano
-    sfx: sfx_voice_old_2
-  - charName: anziano
-    sfx: sfx_voice_old_3
-  - charName: mario
-    sfx: sfx_voice_mario_1
-  - charName: mario
-    sfx: sfx_voice_mario_2
-  - charName: mario
-    sfx: sfx_voice_mario_3
-  - charName: vampiro
-    sfx: sfx_voice_vampiro_1
-  - charName: vampiro
-    sfx: sfx_voice_vampiro_2
-  - charName: vampiro
-    sfx: sfx_voice_vampiro_3
-  - charName: hippy
-    sfx: sfx_voice_hiippie_1
-  - charName: hippy
-    sfx: sfx_voice_hiippie_2
-  - charName: hippy
-    sfx: sfx_voice_hiippie_3
-  - charName: ragazza
-    sfx: sfx_voice_romantica_1
-  - charName: ragazza
-    sfx: sfx_voice_romantica_2
-  - charName: ragazza
-    sfx: sfx_voice_romantica_3
-  - charName: ossessivo
-    sfx: sfx_voice_compulsivo_1
-  - charName: ossessivo
-    sfx: sfx_voice_compulsivo_2
-  - charName: ossessivo
-    sfx: sfx_voice_compulsivo_3
-  - charName: rocker
-    sfx: sfx_voice_metal_1
-  - charName: rocker
-    sfx: sfx_voice_metal_2
-  - charName: rocker
-    sfx: sfx_voice_metal_3
+  - {fileID: 11400000, guid: 41d934b7e53f49f469758a90897fe414, type: 2}
+  - {fileID: 11400000, guid: 2bc6fc2df76a34344b3b220ff8b4dcbb, type: 2}
+  - {fileID: 11400000, guid: 323b5b2d110afbc4e86ea49169fe6bf0, type: 2}
+  - {fileID: 11400000, guid: 47f6862cddc88d34d88ab3b06d1a305e, type: 2}
+  - {fileID: 11400000, guid: f6a1157e95626ed40b283bc8b0c03b03, type: 2}
+  - {fileID: 11400000, guid: 4bce51eb729ddad4294794a195e8f1bb, type: 2}
+  - {fileID: 11400000, guid: cdef12da5dff6bc428790b07a4253fed, type: 2}
+  - {fileID: 11400000, guid: f52e7a490a149c54398c734bf4e19e6c, type: 2}
+  - {fileID: 11400000, guid: cb10135129396354d9ecd0f21d3524c9, type: 2}
+  - {fileID: 11400000, guid: cd015a59aa7c0104e99b1c78342f10cd, type: 2}
+  - {fileID: 11400000, guid: 41ebee11dc02d6c4cb16d6838fc41563, type: 2}
+  - {fileID: 11400000, guid: 5e3590b23f8d8bd4aa2c7de524d579db, type: 2}
+  - {fileID: 11400000, guid: 00b3189c10f224746aea237d76325d3d, type: 2}
+  - {fileID: 11400000, guid: bb620a6536e810c4c88e40b53a72057b, type: 2}
+  - {fileID: 11400000, guid: 7097c65e4bcf9ee468d8014669b32444, type: 2}
+  - {fileID: 11400000, guid: 4456c88c0f651674793aa7d256e40e29, type: 2}
+  - {fileID: 11400000, guid: 4aa86486667802f46a2d11847bf4b069, type: 2}
+  - {fileID: 11400000, guid: 803f639bbd0acf444a378a76fc798525, type: 2}
+  - {fileID: 11400000, guid: 5fe8ba6f4133a364fba56f2939049f6c, type: 2}
+  - {fileID: 11400000, guid: d62b6670cdde46640ba65e4861da5586, type: 2}
+  - {fileID: 11400000, guid: ec893b4fd412d6941a8b01498dd472c1, type: 2}
+  - {fileID: 11400000, guid: 3bc9a0215cffaa448a25320540fcf94a, type: 2}
+  - {fileID: 11400000, guid: e4ad6933aa97de54a944e4f02a0e36e8, type: 2}
+  - {fileID: 11400000, guid: 8e24f7ae79efec84c93858c86db3ed7e, type: 2}
+  - {fileID: 11400000, guid: c521c2c6c53b85449a6b89503fd4543e, type: 2}
+  - {fileID: 11400000, guid: 45b4965cae1fe4e4d9373ac9595d2872, type: 2}
+  - {fileID: 11400000, guid: aeeb18b1bf8662647868334ec2b86a7e, type: 2}
 --- !u!1 &4783229975823705905
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +289,7 @@ Transform:
   - {fileID: 4783229977528411517}
   - {fileID: 4783229976038606476}
   - {fileID: 4783229976690398192}
-  - {fileID: 7142927141226897430}
+  - {fileID: 5048156767502896630}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

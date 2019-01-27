@@ -22,7 +22,7 @@ namespace GGJ19
 
         public void PlayRandomVoice()
         {
-            var voices = VoiceSystem.I.GetVoice(characterName);
+            var voices = MVoiceSystem.I.GetVoice(characterName);
             int i = Random.Range(0, voices.Count);
 
             SfxManager.I.Play(voices[i]);
