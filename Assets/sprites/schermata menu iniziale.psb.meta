@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 4483da71bfe194b4e9e9b9afd1aff7c8
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: <Gruppo>_GO/<Gruppo>_GO
+    100002: <Gruppo>_GO/<Gruppo>_GO/<Gruppo>
+    100004: <Gruppo>_GO/<Gruppo>_GO/credits
+    100006: <Gruppo>_GO/<Gruppo>_GO/New Game
+    100008: <Gruppo>_GO/<Gruppo>_GO/Selezione
+    400000: <Gruppo>_GO/<Gruppo>_GO/Transform
+    400002: <Gruppo>_GO/<Gruppo>_GO/<Gruppo>/Transform
+    400004: <Gruppo>_GO/<Gruppo>_GO/credits/Transform
+    400006: <Gruppo>_GO/<Gruppo>_GO/New Game/Transform
+    400008: <Gruppo>_GO/<Gruppo>_GO/Selezione/Transform
+    2800000: schermata menu iniziale
+    21200000: <Gruppo>_GO/<Gruppo>_GO/<Gruppo>/SpriteRenderer
+    21200002: <Gruppo>_GO/<Gruppo>_GO/credits/SpriteRenderer
+    21200004: <Gruppo>_GO/<Gruppo>_GO/New Game/SpriteRenderer
+    21200006: <Gruppo>_GO/<Gruppo>_GO/Selezione/SpriteRenderer
+    21300000: credits
+    21300002: New Game
+    21300004: Selezione
+    21300006: <Gruppo>
+    100100000: <Gruppo>_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: credits
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1338
+      y: 2020
+      width: 1175
+      height: 335
+    spriteID: 49e39b9d55f4e8949a7748983538e785
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -8, y: 1820}
+  - name: New Game
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2521
+      y: 2020
+      width: 1175
+      height: 335
+    spriteID: 98b87ca94905f9740b398fb2ed1febf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1175, y: 1343}
+  - name: Selezione
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2020
+      width: 1326
+      height: 426
+    spriteID: 65e15a7ad6a630d42ac7f722c6203479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1271, y: 1393}
+  - name: <Gruppo>
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3934
+      height: 2008
+    spriteID: d61c7a13ea3d6ee4f98dbcbd3317ab1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 3934, y: 2008}
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: credits
+    spriteName: credits
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 49e39b9d55f4e8949a7748983538e785
+    layerID: 11
+    mosaicPosition: {x: 1338, y: 2020}
+  - name: New Game
+    spriteName: New Game
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 98b87ca94905f9740b398fb2ed1febf5
+    layerID: 6
+    mosaicPosition: {x: 2521, y: 2020}
+  - name: Selezione
+    spriteName: Selezione
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 65e15a7ad6a630d42ac7f722c6203479
+    layerID: 2
+    mosaicPosition: {x: 4, y: 2020}
+  - name: <Gruppo>
+    spriteName: <Gruppo>
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d61c7a13ea3d6ee4f98dbcbd3317ab1b
+    layerID: 77
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0

@@ -35,12 +35,12 @@ namespace GGJ19 {
             }
         }
 
-        public void Show(CharacterDialogues dialogues)
+        public void Show(CharacterDialogues dialogues, CharacterAnimation charAnimation)
         {
-            StartCoroutine(ShowCO(dialogues));
+            StartCoroutine(ShowCO(dialogues, charAnimation));
         }
 
-        public IEnumerator ShowCO(CharacterDialogues dialogues)
+        public IEnumerator ShowCO(CharacterDialogues dialogues, CharacterAnimation charAnimation)
         {
             foreach (var dialogue in dialogues.dialogues)
             {
@@ -50,6 +50,7 @@ namespace GGJ19 {
                 }
 
                 text.text = dialogue.text;
+                charAnimation.SetEmotion(dialogue.emotion);
 
                 panel.DOAnchorPosY(showPosition, transitionTime);
                 yield return new WaitForSeconds(transitionTime);

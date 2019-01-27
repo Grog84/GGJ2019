@@ -22,9 +22,13 @@ namespace GGJ19 {
         CharacterPockets pockets;
         public Transform mainBone;
 
+        CharacterAnimation charAnimation;
+
         private void Start()
         {
             pockets = GetComponentInChildren<CharacterPockets>();
+            charAnimation = GetComponent<CharacterAnimation>();
+            charAnimation.name = name;
         }
 
         public void ShowInteraction(bool status)
@@ -43,7 +47,7 @@ namespace GGJ19 {
 
             pockets.Show(pocketItems);
 
-            DialogueManager.I.Show(dialogues);
+            DialogueManager.I.Show(dialogues, charAnimation);
         }
     }
 }
