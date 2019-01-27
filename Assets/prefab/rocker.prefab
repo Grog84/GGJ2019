@@ -188,36 +188,6 @@ Transform:
   m_Father: {fileID: 1886278856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &874803524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 874803525}
-  m_Layer: 0
-  m_Name: braccio_dx
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &874803525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874803524}
-  m_LocalRotation: {x: -0, y: -0, z: -0.5112148, w: -0.859453}
-  m_LocalPosition: {x: 1.19, y: 0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1886278858}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 61.49}
 --- !u!1 &941241417
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,13 +266,13 @@ MonoBehaviour:
   m_SolveFromDefaultPose: 1
   m_Weight: 1
   m_Chain:
-    m_EffectorTransform: {fileID: 874803525}
+    m_EffectorTransform: {fileID: 0}
     m_TargetTransform: {fileID: 1281889289}
     m_TransformCount: 3
     m_Transforms:
     - {fileID: 1886278857}
-    - {fileID: 1886278858}
-    - {fileID: 874803525}
+    - {fileID: 0}
+    - {fileID: 0}
     m_DefaultLocalRotations:
     - {x: 0, y: -0, z: 0.97769535, w: 0.21002823}
     - {x: 0, y: -0, z: 0.95007324, w: 0.31202713}
@@ -570,38 +540,6 @@ Transform:
   m_Father: {fileID: 1886278861}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &586206013034046639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1886278858}
-  m_Layer: 0
-  m_Name: bone_11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1886278858
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586206013034046639}
-  m_LocalRotation: {x: 0, y: 0, z: 0.12316381, w: -0.9923864}
-  m_LocalPosition: {x: 0.00000057110884, y: -0.000000064965846, z: 0}
-  m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
-  m_Children:
-  - {fileID: 4230586867209070962}
-  - {fileID: 874803525}
-  m_Father: {fileID: 1886278857}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309058674163113992
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,36 +759,6 @@ Transform:
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 977077557175856825}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1952192495021607757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4230586867209070962}
-  m_Layer: 0
-  m_Name: bone_12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4230586867209070962
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952192495021607757}
-  m_LocalRotation: {x: 0, y: 0, z: 0.36828667, w: 0.92971236}
-  m_LocalPosition: {x: 0.9691651, y: -0.0000005967163, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1886278858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2438248450065738345
@@ -1367,9 +1275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 1886278858}
+  m_RootBone: {fileID: 0}
   m_BoneTransforms:
-  - {fileID: 1886278858}
+  - {fileID: 0}
   m_Bounds:
     m_Center: {x: 1.1823637, y: 3.3765507, z: 0}
     m_Extent: {x: 0.33124626, y: 0.3430009, z: 0}
@@ -1561,8 +1469,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.8087656, w: -0.58813125}
   m_LocalPosition: {x: 2.254977, y: -1.6553197, z: 0}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_Children:
-  - {fileID: 1886278858}
+  m_Children: []
   m_Father: {fileID: 8111120298507611999}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
