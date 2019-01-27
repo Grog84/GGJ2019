@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
   m_Name: hippy-orto
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  m_EditorClassIdentifier: 
   character: hippy
   item: {fileID: 11400000, guid: f11d204ed2e8c4a48a4a06a22260823b, type: 2}
-  text: How could you put a vegetable garden in her place! Don't you know that once
-    she almost died when a pot from her own vegetabes fell n her head?
+  text: 'What did you do? Didn''t you know she almost died when a pot of her verticl
+    garden fell on her head? '

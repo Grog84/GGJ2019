@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Mario
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
+  m_Name: mario
+  m_EditorClassIdentifier: 
   character: mario
   item: {fileID: 11400000, guid: 8ad73feb47090ed4f8657f4d1a0a878b, type: 2}
-  text: How did you dare putting mushrooms in Mario's place! He was killed by a mushroom
-    friend, they both in loved the same woman! The mushrom lives with her now, and
-    I overheard she is pregnant...
+  text: What did you do? Why did you put mushrooms on his table? He was killed by
+    a mushroom friend of him who was in love with his girfriend! They now live together
+    andI heard she is already pregnant!

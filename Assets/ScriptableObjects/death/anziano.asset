@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 71639910ab72c6e42971d125d725b713, type: 3}
   m_Name: anziano
-  m_EditorClassIdentifier: Assembly-CSharp:GGJ19:DeathEntry
+  m_EditorClassIdentifier: 
   character: anziano
   item: {fileID: 11400000, guid: ab88636bb578cf841af986e20dc8ca53, type: 2}
-  text: 'Terrible choice, the old man can''t stand guns!! He died some time ago during
-    a gang fight, after he went on the street complaining about the noise the guys
-    were making. '
+  text: O dear, what did you do to that poor man! Why a gun? He went complaining on
+    the street because of the noise some gangs were doing and he got shoot to death!
+    It was to much for him!
