@@ -35,13 +35,19 @@ namespace GGJ19
 
             if (finalScore < 0)
             {
+                string characterName = HomeManager.buildingHomeName;
+                DeathManager.I.ShowDeath(characterName);
+            }
+            else
+            {
+
+                HomeManager.I.AddComposition();
+
+                gamePhase = GamePhase.EXPLORE;
+                SceneManager.LoadScene(0);
 
             }
 
-            HomeManager.I.AddComposition();
-
-            gamePhase = GamePhase.EXPLORE;
-            SceneManager.LoadScene(0);
 
         }
 
