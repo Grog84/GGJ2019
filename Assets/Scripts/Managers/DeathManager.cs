@@ -38,6 +38,11 @@ namespace GGJ19
             }
         }
 
+        IEnumerator ShowDeathCO()
+        {
+            yield return new WaitForSeconds(8f);
+            Fader.I.FadeOut();
+        }
         
 
 

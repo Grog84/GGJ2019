@@ -25,8 +25,17 @@ namespace GGJ19
 
         public void GoToBuild()
         {
+            StartCoroutine(GoToBuildCO());
+        }
+
+        IEnumerator GoToBuildCO()
+        {
+            Fader.I.FadeOut();
+            yield return new WaitForSeconds(2f);
+
             gamePhase = GamePhase.BUILD;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
+            Fader.I.FadeIn();
         }
 
         public void GoToExplore()
@@ -44,11 +53,26 @@ namespace GGJ19
                 HomeManager.I.AddComposition();
 
                 gamePhase = GamePhase.EXPLORE;
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
 
             }
 
 
+        }
+
+        public void GoToMainMenu()
+        {
+            StartCoroutine(GoToMainMenuCO());
+        }
+
+        IEnumerator GoToMainMenuCO()
+        {
+            Fader.I.FadeOut();
+
+            yield return new WaitForSeconds(2f);
+
+            SceneManager.LoadScene(0);
+            Fader.I.FadeIn();
         }
 
     }
