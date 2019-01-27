@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98aef5e042aecb446a5e37983b881cd5, type: 3}
   m_Name: principale
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - text: Hi dear! Finally today is yur first day out there! Good luck boy!
+    emotion: 3
+  - text: Be very carefull with your clients! Chost can be very picky on the things
+      they like or dislike!
+    emotion: 3
+  - text: Unfortunately often they don't really remember what tey like... You will
+      notice how memories of former times tend to vanish easily.
+    emotion: 3
+  - text: But don't worry! You will become an expert in undestanding your clients
+      tastes at first sight! Sometimes few clues are enought!
+    emotion: 3
+  - text: Just one last thing! Remember, ghost can be very upsetted by memories of
+      their... you know... departures
+    emotion: 0
+  - text: 'I still can''t look at a river withut feeling a chill down my spine! '
+    emotion: 3
+  - text: But don't worry, you will be fine! Just don't ask about how they died and
+      don't make anything that can make them remember!
+    emotion: 0

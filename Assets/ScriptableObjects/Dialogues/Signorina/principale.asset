@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98aef5e042aecb446a5e37983b881cd5, type: 3}
   m_Name: principale
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - text: Ohhhh I am so excited, this place is amazing!
+    emotion: 1
+  - text: I always knew there was an afterlife! I knew it!
+    emotion: 1
+  - text: "Maybe I didn't imagine it like this... I was thinking about something a
+      bit more retr\xF2 and classy, you know..."
+    emotion: 3
+  - text: But I don't want to be negative! I feel my chance to find true love is finally
+      arrived!
+    emotion: 3

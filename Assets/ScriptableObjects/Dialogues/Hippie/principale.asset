@@ -10,6 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98aef5e042aecb446a5e37983b881cd5, type: 3}
-  m_Name: New Character Dialogues
+  m_Name: principale
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - text: Oh, dear, you look so pale, how are you?
+    emotion: 0
+  - text: 'You should definetly try some of my herbal syrups... you know, they are
+      so effective!
+
+'
+    emotion: 1
+  - text: Our bodies are a temple.. you should take better care of yourself... be
+      carefull of what you eat and what you wear!
+    emotion: 3
+  - text: I wear and eat only with respect and care for the earth and everything and
+      everyonearound me...
+    emotion: 0
+  - text: But you know, I want to be treated with the same respect. Please fin me
+      a lace where I can live peacefully.
+    emotion: 0
+  - text: 'I alreaedy had to many problems with my disrespectefull neighbours. '
+    emotion: 0
