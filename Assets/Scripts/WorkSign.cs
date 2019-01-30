@@ -12,28 +12,35 @@ namespace GGJ19 {
 
         public void Interact()
         {
-            if (GameManager.I.PHASE == GamePhase.EXPLORE)
+            if (GameManager.I.PHASE != GamePhase.DEATH)
             {
-                HomeManager.I.SetBuildingHome(mHome);
-
-                SfxManager.I.Play("sfx_passaggio_build");
-                GameManager.I.GoToBuild();
-            }
-            else
-            {
-                if (HomeManager.I.IsComplete())
+                if (GameManager.I.PHASE == GamePhase.EXPLORE && !mHome.IsComplete())
                 {
-                    FixCanvas.I.gameObject.SetActive(false);
-                    SfxManager.I.Play("sfx_ritorno_gioco");
-                    GameManager.I.GoToExplore();
+                    HomeManager.I.ACTIVE_HOME = mHome;
+
+                    SfxManager.I.Play("sfx_passaggio_build");
+                    GameManager.I.GoToBuild();
+                }
+                else
+                {
+                    if (HomeManager.I.IsComplete())
+                    {
+                        SfxManager.I.Play("sfx_ritorno_gioco");
+                        GameManager.I.GoToExplore();
+                        interactImage.DOFade(0, 0.5f);
+                    }
                 }
             }
         }
 
         public void ShowInteraction(bool status)
         {
-            float targetAlpha = status ? 1f : 0f;
-            interactImage.DOFade(targetAlpha, 0.5f);
+            if (!mHome.IsComplete() || (mHome.IsComplete() && GameManager.I.PHASE == GamePhase.BUILD))
+            {
+                float targetAlpha = status ? 1f : 0f;
+                interactImage.DOFade(targetAlpha, 0.5f);
+            }
+            
         }
     }
 

@@ -12,8 +12,14 @@ namespace GGJ19
 
         private void Update()
         {
-            if (interactiveCharacter != null && Input.GetKeyDown(KeyCode.Space)) {
-                if (!GameManager.I.INTERACTING)
+            if (interactiveCharacter != null && Input.GetKeyDown(KeyCode.Space) && GameManager.I.PHASE == GamePhase.EXPLORE) {
+
+                if (interactiveCharacter.m_name == "boss" && GameManager.I.FinishedHomes == 7)
+                {
+                    GameManager.I.Win();
+                }
+
+                else if (!GameManager.I.INTERACTING)
                 {
                     interactiveCharacter.Interact();
                 }

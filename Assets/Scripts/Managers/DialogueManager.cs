@@ -21,6 +21,9 @@ namespace GGJ19 {
         bool isOpen = false;
         bool click = false;
 
+        public CharacterDialogues[] successDialogues;
+        public CharacterDialogues endDialogue;
+
         private void Start()
         {
             parkingPosition = panel.position.y;
@@ -71,6 +74,66 @@ namespace GGJ19 {
             GameManager.I.INTERACTING = false;
             CameraManager.I.Reset();
 
+        }
+
+        public IEnumerator ShowEmotion(Emotion emotion)
+        {
+            CharacterDialogues dialogues = successDialogues[(int)emotion];
+
+            foreach (var dialogue in dialogues.dialogues)
+            {
+                if (isOpen)
+                {
+                    yield return StartCoroutine(HideCO());
+                }
+
+                SfxManager.I.Play("sfx_pannello_testo");
+
+                text.text = dialogue.text;
+
+                panel.DOAnchorPosY(showPosition, transitionTime);
+                yield return new WaitForSeconds(transitionTime);
+
+                isOpen = true;
+
+                while (!click)
+                {
+                    yield return null;
+                }
+                click = false;
+            }
+
+            Hide();
+
+        }
+
+        public IEnumerator ShowEnd()
+        {
+
+            foreach (var dialogue in endDialogue.dialogues)
+            {
+                if (isOpen)
+                {
+                    yield return StartCoroutine(HideCO());
+                }
+
+                SfxManager.I.Play("sfx_pannello_testo");
+
+                text.text = dialogue.text;
+
+                panel.DOAnchorPosY(showPosition, transitionTime);
+                yield return new WaitForSeconds(transitionTime);
+
+                isOpen = true;
+
+                while (!click)
+                {
+                    yield return null;
+                }
+                click = false;
+            }
+
+            Hide();
         }
 
         public void Hide()

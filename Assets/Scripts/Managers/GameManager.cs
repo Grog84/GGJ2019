@@ -10,6 +10,8 @@ namespace GGJ19
     public class GameManager : MonoSingleton<GameManager>
     {
         int finalScore = 0;
+        int finishedHomes = 0;
+        public int FinishedHomes { get { return finishedHomes; } }
 
         GamePhase gamePhase;
         public GamePhase PHASE {
@@ -23,6 +25,15 @@ namespace GGJ19
             set { interacting = value; }
         }
 
+        PlayerMovement player;
+
+
+
+        private void OnEnable()
+        {
+            player = FindObjectOfType<PlayerMovement>();
+        }
+
         public void GoToBuild()
         {
             StartCoroutine(GoToBuildCO());
@@ -30,35 +41,100 @@ namespace GGJ19
 
         IEnumerator GoToBuildCO()
         {
+            interacting = true;
+
             Fader.I.FadeOut();
             yield return new WaitForSeconds(2f);
 
+            var activeHome = HomeManager.I.ACTIVE_HOME;
+
+            player.transform.position = activeHome.transform.position;
+            activeHome.SetCameraActive(true);
+            UIItemList.I.Show();
+
             gamePhase = GamePhase.BUILD;
-            SceneManager.LoadScene(2);
             Fader.I.FadeIn();
+
+            interacting = false;
         }
 
         public void GoToExplore()
         {
+            StartCoroutine(GoToExploreCO());
+        }
+
+
+        IEnumerator GoToExploreCO()
+        {
+            interacting = true;
+
+            var home = HomeManager.I.ACTIVE_HOME;
+
+            UIItemList.I.Hide();
+            yield return new WaitForSeconds(2f);
+            Fader.I.FadeOut();
+            yield return new WaitForSeconds(2f);
+
+            home.SetCameraActive(false);
+            CameraManager.I.StartFollowing(home.transform);
+
+            Fader.I.FadeIn();
+            yield return new WaitForSeconds(2f);
+
             finalScore += HomeManager.I.GetScore();
+
+            
+
+            player.SetCollidersActive(false);
+
+            home.MoveCharacterIn();
+            yield return new WaitForSeconds(5f);
+
+            player.SetCollidersActive(true);
+
+            yield return StartCoroutine( DialogueManager.I.ShowEmotion(home.character.Emotion));
 
             if (finalScore < 0)
             {
-                string characterName = HomeManager.buildingHomeName;
+                gamePhase = GamePhase.DEATH;
+
+                string characterName = HomeManager.I.ACTIVE_HOME.character.m_name;
                 DeathManager.I.ShowDeath(characterName);
             }
             else
             {
-
-                HomeManager.I.AddComposition();
-
+                finishedHomes++;
+                CameraManager.I.Reset();
                 gamePhase = GamePhase.EXPLORE;
-                SceneManager.LoadScene(1);
-
+                
             }
+
+            interacting = false;
+
+        }
+
+        public void Win()
+        {
+            StartCoroutine(WinCO());
+        }
+
+        IEnumerator WinCO()
+        {
+            gamePhase = GamePhase.DEATH;
+
+            yield return StartCoroutine(DialogueManager.I.ShowEnd());
+
+            SfxManager.I.Play("sfx_rullo");
+            Fader.I.FadeOut();
+            yield return new WaitForSeconds(3);
+
+            WinManager.I.ShowWin(finalScore);
+
+            Fader.I.FadeIn();
 
 
         }
+
 
         public void GoToMainMenu()
         {

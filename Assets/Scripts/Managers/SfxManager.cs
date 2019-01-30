@@ -44,6 +44,7 @@ namespace GGJ19
                 audioSources[firstEmptySource].Play();
 
                 firstEmptySource++;
+                firstEmptySource %= 9;
             }
         }
 

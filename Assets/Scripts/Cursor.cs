@@ -20,9 +20,9 @@ namespace GGJ19
         private void Awake()
         {
             rectTransform = GetComponent<RectTransform>();
-            startingPosition = rectTransform.position;
+            startingPosition = rectTransform.position + Vector3.left * 770;
 
-            parkingPosition = startingPosition + Vector3.up * 1000;
+            parkingPosition = startingPosition + Vector3.up * 1000 ;
 
             currentPosition = 0;
 

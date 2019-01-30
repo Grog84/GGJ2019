@@ -13,10 +13,15 @@ namespace GGJ19
 
         bool isFlipped = true;
 
+        BoxCollider2D[] colliders;
+
+        AudioSource audio;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
+            colliders = GetComponents<BoxCollider2D>();
+            audio = GetComponent<AudioSource>();
         }
 
         // Update is called once per frame
@@ -24,6 +29,17 @@ namespace GGJ19
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
+
+            if ((movement.x != 0 || movement.y != 0) && !audio.isPlaying)
+            {
+                audio.Play();
+
+            }
+            else if ((movement.x == 0 && movement.y == 0) && audio.isPlaying)
+            {
+
+                audio.Stop();
+            }
         }
 
         private void FixedUpdate()
@@ -45,6 +61,14 @@ namespace GGJ19
             float xScale = transform.localScale.x;
             transform.localScale = new Vector3(-xScale, transform.localScale.y, transform.localScale.z);
             isFlipped = !isFlipped;
+        }
+
+        public void SetCollidersActive(bool status)
+        {
+            foreach (var col in colliders)
+            {
+                col.enabled = status;
+            }
         }
 
         

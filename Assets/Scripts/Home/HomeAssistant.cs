@@ -9,7 +9,7 @@ namespace GGJ19
         public Home home;
         private void Start()
         {
-            HomeManager.I.SetActiveHome(home);
+            HomeManager.I.ACTIVE_HOME = home;
             GameManager.I.PHASE = GamePhase.BUILD;
         }
     }

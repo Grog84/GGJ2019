@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using DG.Tweening;
 
 namespace GGJ19 {
 
@@ -14,10 +15,13 @@ namespace GGJ19 {
 
         Dictionary<Position, CharacterItem> composition = new Dictionary<Position, CharacterItem>();
 
-        public WorkSign startSign;
-        public WorkSign stopSign;
+        public GameObject mVirtualCamera;
 
         bool complete = false;
+        int score = 0;
+
+        public GameObject navigation;
+
 
         private void Awake()
         {
@@ -31,28 +35,32 @@ namespace GGJ19 {
 
         }
 
-        private void Start()
+        public void MoveCharacterIn()
         {
-            if (GameManager.I.PHASE == GamePhase.BUILD)
+            StartCoroutine(MoveCharacterInCO());
+        }
+
+        public IEnumerator MoveCharacterInCO()
+        {
+            character.transform.DOMove(navigation.transform.Find("Stairs").position, 2f);
+            yield return new WaitForSeconds(2f);
+            character.transform.DOMove(navigation.transform.Find("Door").position, 1f);
+            yield return new WaitForSeconds(1f);
+            character.transform.DOMove(transform.position, 1f);
+            yield return new WaitForSeconds(1f);
+
+            if (score < 0)
             {
-                startSign.gameObject.SetActive(false);
-                stopSign.gameObject.SetActive(true);
+                character.SetEmotion(Emotion.SAD);
             }
-            else if (!complete)
+            else if (score > 0 && score <= 50)
             {
-                startSign.gameObject.SetActive(true);
-                stopSign.gameObject.SetActive(false);
+                character.SetEmotion(Emotion.NORMAL);
             }
             else
             {
-                startSign.gameObject.SetActive(false);
-                stopSign.gameObject.SetActive(false);
+                character.SetEmotion(Emotion.HAPPY);
             }
-        }
-
-        public void MoveCharacterIn()
-        {
-            character.transform.position = transform.position;
         }
 
         public void SetItem(CharacterItem item, Position position)
@@ -73,7 +81,7 @@ namespace GGJ19 {
         public int EvaluateComposition()
         {
             var choices = character.choices;
-            int score = 0;
+            score = 0;
 
             foreach (Position pos in (Position[])Enum.GetValues(typeof(Position)))
             {
@@ -124,12 +132,17 @@ namespace GGJ19 {
                 SetItem(this.composition[pos], pos);
             }
             complete = true;
-            startSign.gameObject.SetActive(false);
+
         }
 
         public Home GetClone()
         {
             return (Home)this.MemberwiseClone();
+        }
+
+        public void SetCameraActive(bool status)
+        {
+            mVirtualCamera.SetActive(status);
         }
 
 

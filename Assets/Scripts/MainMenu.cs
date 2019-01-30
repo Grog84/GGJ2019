@@ -10,6 +10,7 @@ namespace GGJ19
 {
 
     public enum MenuBtn { PLAY, CREDITS }
+    public enum MenuPhase { MENU, CREDITS }
 
     public class MainMenu : MonoBehaviour
     {
@@ -20,7 +21,10 @@ namespace GGJ19
 
         public AudioSource mAudio;
 
+        public GameObject Credits;
+
         MenuBtn menuBtn = MenuBtn.PLAY;
+        MenuPhase phase = MenuPhase.MENU;
 
         private void Start()
         {
@@ -31,7 +35,7 @@ namespace GGJ19
 
         void Update()
         {
-            if (Input.GetButtonDown("Vertical"))
+            if (phase == MenuPhase.MENU && Input.GetButtonDown("Vertical"))
             {
                 if (Input.GetAxis("Vertical") < 0 && menuBtn == MenuBtn.PLAY)
                 {
@@ -51,9 +55,19 @@ namespace GGJ19
 
             if (Input.GetButtonDown("Jump"))
             {
-                if (menuBtn == MenuBtn.PLAY)
+                if (phase == MenuPhase.MENU && menuBtn == MenuBtn.PLAY)
                 {
                     StartCoroutine(PlayCO());
+                }
+                else if (phase == MenuPhase.MENU && menuBtn == MenuBtn.CREDITS)
+                {
+                    Credits.SetActive(true);
+                    phase = MenuPhase.CREDITS;
+                }
+                else if (phase == MenuPhase.CREDITS)
+                {
+                    Credits.SetActive(false);
+                    phase = MenuPhase.MENU;
                 }
             }
         }

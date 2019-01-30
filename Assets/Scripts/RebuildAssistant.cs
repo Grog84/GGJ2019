@@ -14,10 +14,6 @@ namespace GGJ19
         {
             mAudio.DOFade(1, 2);
 
-            if (HomeManager.I != null)
-            {
-                HomeManager.I.RebuildFinishedHouses();
-            }
 
             if (Fader.I != null)
             {

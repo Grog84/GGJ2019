@@ -18,10 +18,23 @@ namespace GGJ19
         public TextMeshProUGUI text;
 
         public Image img;
+        bool click = false;
+
+        private void Update()
+        {
+            if (GameManager.I.PHASE == GamePhase.DEATH)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    click = true;
+                }
+            }
+        }
 
         public void Hide()
         {
             img.color = Color.clear;
+            text.text = "";
         }
 
         public void ShowDeath(string characterName)
@@ -47,8 +60,16 @@ namespace GGJ19
 
         IEnumerator ShowDeathCO()
         {
-            yield return new WaitForSeconds(8f);
+
+            while (!click)
+            {
+                yield return null;
+            }
+            click = false;
+
+            Hide();
             GameManager.I.GoToMainMenu();
+
         }
         
 

@@ -23,6 +23,8 @@ namespace GGJ19 {
         public Transform mainBone;
 
         CharacterAnimation charAnimation;
+        Emotion emotion;
+        public Emotion Emotion { get { return emotion; } }
 
         private void Start()
         {
@@ -50,6 +52,12 @@ namespace GGJ19 {
             pockets.Show(pocketItems);
 
             DialogueManager.I.Show(dialogues, charAnimation);
+        }
+
+        public void SetEmotion(Emotion emotion)
+        {
+            charAnimation.SetEmotion(emotion);
+            this.emotion = emotion;
         }
     }
 }

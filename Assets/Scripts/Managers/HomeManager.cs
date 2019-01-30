@@ -7,22 +7,15 @@ namespace GGJ19
 
     public class HomeManager : MonoSingleton<HomeManager>
     {
-        public Home activeHome;
-        public static Home buildingHome;
-        public static string buildingHomeName;
+        Home activeHome;
+        public Home ACTIVE_HOME {
+            get { return activeHome; }
+            set { activeHome = value; }
+        }
+
 
         public Dictionary<string, Dictionary<Position, CharacterItem>> homeCompositions = new Dictionary<string, Dictionary<Position, CharacterItem>>();
 
-        public void SetActiveHome(Home home)
-        {
-            activeHome = home;
-        }
-
-        public void SetBuildingHome(Home home)
-        {     
-            buildingHome = home.GetClone();
-            buildingHomeName = buildingHome.character.m_name;
-        }
 
         public void SetItemInPosition(CharacterItem item, Position pos)
         {
@@ -42,29 +35,15 @@ namespace GGJ19
 
         }
 
-        public void AddComposition(Dictionary<Position, CharacterItem> composition)
-        {
-            homeCompositions[buildingHomeName] = composition;
-
-        }
-
-        public void AddComposition()
-        {
-            homeCompositions[buildingHomeName] = activeHome.GetComposition();
-
-        }
-
         public int GetScore()
         {
-            activeHome.character = buildingHome.character;
             return activeHome.EvaluateComposition();
         }
 
+        /*
         public void RebuildFinishedHouses()
         {
             StartCoroutine(RebuildFinishedHousesCO());
-
-
         }
 
         public IEnumerator RebuildFinishedHousesCO()
@@ -83,14 +62,9 @@ namespace GGJ19
                         item.BuildFromComposition(entry.Value);
                         item.MoveCharacterIn();
                     }
-
-
                 }
-
             }
-
-
-        }
+        }*/
 
 
 

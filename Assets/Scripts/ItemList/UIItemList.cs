@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 namespace GGJ19 {
 
@@ -20,6 +21,10 @@ namespace GGJ19 {
 
         public Cursor cursor;
 
+        RectTransform rt;
+        float showPosition = 570f;
+        float hidePosition = 1400f;
+
         bool itemsVisible;
         Position currentPos;
 
@@ -27,6 +32,8 @@ namespace GGJ19 {
         {
             HideItems();
             text.text = "";
+
+            rt = GetComponent<RectTransform>();
         }
 
         private void Update()
@@ -38,6 +45,16 @@ namespace GGJ19 {
 
                 GameManager.I.INTERACTING = true;
             }
+        }
+
+        public void Hide()
+        {
+            rt.DOAnchorPosX(hidePosition, 2f);
+        }
+
+        public void Show()
+        {
+            rt.DOAnchorPosX(showPosition, 2f);
         }
 
         public void HideItems()
